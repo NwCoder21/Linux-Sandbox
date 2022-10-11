@@ -27,3 +27,21 @@ will result in the following:
 How are you?
 ```
 
+> Key points from this lesson are: 
+
+* Use if to start the conditional, followed by the condition in square brackets ([ ])
+* Make sure to leave a space between a bracket and the conditional statement
+* The conditional is closed with a backwards if, fi
+
+
+> Table of comparison operators for numbers which can be used within bash scripts:
+
+| **Operator**|  **In Bash**|
+| :-----------: | :-----------: |
+| Equal|-eq|
+| Not equal|-ne|
+| Less than or equalt to|-le|
+| Less than|-lt|
+| Greater than or equal|-ge|
+| Greater than|-gt|
+| Is null|-z|
