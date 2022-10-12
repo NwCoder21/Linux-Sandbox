@@ -1,4 +1,4 @@
-# Bash Scripting - Basic Conditional Statement 
+# Bash Scripting - Basic Condition
 
 The following script:
 
