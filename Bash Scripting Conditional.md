@@ -1,6 +1,6 @@
 # Bash Scripting - Basic Condition
 
-The following script:
+With a script named *script.sh*, the following script:
 
 ```bash
 
