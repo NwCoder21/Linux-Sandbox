@@ -36,6 +36,13 @@ $ ls -l
 $ ls -t
 ```
 
+
+---
+* *`mkdir`* - takes in a directory name as an argument, and then creates a new directory in the current working directory. Here we used mkdir to create a new directory named games/.
+
+```yaml
+$ mkdir games
+```
 ---
 * `>` takes the standard output of the command on the left and redirects it to the file on the right. For example:
 ```yaml
