@@ -47,6 +47,8 @@ $ mkdir games
 ```yaml
 $ mv pens.txt stationery/
 ```
+
+
 ---
 * *`rm`* - deletes files. The following command removes the file footbal_players.txt from the file system
 
@@ -56,12 +58,56 @@ $ rm football_players.txt
 
 
 ---
+* *`rmdir`* - deletes directories. Only works on empty directories; otherwise you get an error
+* 
+```yaml
+$ rmdir games
+```
+
+
+
+
+
+
+
+---
 * *`rm -r`* - the command `rm` with the option `-r` deletes a directory and all of its child directories. Here, the teams directory is being deleted along wiht any files and/or directories it contains
 
 ```yaml
 $ rm -r teams
 ```
+
+
 ---
+---
+* *`rm -f`* - the command `rm` with the option `-f` forcefully removes a file. Here, the flowers.txt file  being deleted
+
+```yaml
+$ rm -f flowers.txt
+```
+
+
+---
+* *`rm -i`* - the command `rm` with the option `-f` interactively removes a file. Here, the flowers.txt file  being deleted.
+
+```yaml
+$ rm -i flowers.txt
+```
+
+*__Note__*: If you are not certain about removing files that match a pattern you supply, it is always good to run rm interactively `rm –i` to prompt before every removal.
+
+
+---
+
+
+
+
+
+
+
+
+
+
 * *`sort`* - takes a filename or standard input and orders each line alphabetically, printing it to standard output. In the example below, the names of the football players will be outputted in alphabetical order 
 
 
