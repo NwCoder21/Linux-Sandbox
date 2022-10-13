@@ -25,9 +25,7 @@ $ ls -a
 ```yaml
 $ ls -l
 ```
-![image](https://user-images.githubusercontent.com/107522496/195463481-11fb0beb-9084-4056-a3ad-6bdce8267609.png)
-
-![image](https://user-images.githubusercontent.com/107522496/195463615-1fcd8a2f-df93-46b8-94fe-786d2da0d98a.png)
+![image](https://user-images.githubusercontent.com/107522496/195522842-8ab44db6-5155-4e64-bbe2-cb7567f59117.png)
 
 
 ---
