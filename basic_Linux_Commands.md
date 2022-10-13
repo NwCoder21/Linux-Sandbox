@@ -47,7 +47,7 @@ $ mkdir games
 ```yaml
 $ mv pens.txt stationery/
 ```
-
+*__Note__*: The mv command moves files and directories from one directory to another or renames a file or directory. When moving a file or directory to a new directory, it will keep its name. 
 
 ---
 * *`rm`* - deletes files. The following command removes the file footbal_players.txt from the file system
