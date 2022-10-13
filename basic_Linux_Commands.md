@@ -34,13 +34,89 @@ $ ls -l
 $ ls -t
 ```
 
-
 ---
 * *`mkdir`* - takes in a directory name as an argument, and then creates a new directory in the current working directory. Here we used mkdir to create a new directory named games/.
 
 ```yaml
 $ mkdir games
 ```
+
+---
+* *`mv`* - To move a file into a directory, use mv with the source file as the first argument and the destination directory as the second argument. Here we move pens.txt into stationery/.
+
+```yaml
+$ mv pens.txt stationery/
+```
+---
+* *`rm`* - deletes files. The following command removes the file footbal_players.txt from the file system
+
+```yaml
+$ rm football_players.txt
+```
+
+
+---
+* *`rm -r`* - the command `rm` with the option `-r` deletes a directory and all of its child directories. Here, the teams directory is being deleted along wiht any files and/or directories it contains
+
+```yaml
+$ rm -r teams
+```
+---
+* *`sort`* - takes a filename or standard input and orders each line alphabetically, printing it to standard output. In the example below, the names of the football players will be outputted in alphabetical order 
+
+
+```yaml
+$ sort player_names.txt
+```
+
+---
+* *`touch`* - creates a new file inside the working directory. It takes in a file name as an argument, and then creates a new empty file in the current working directory
+
+
+```yaml
+$ touch staff_list.txt
+```
+
+
+---
+* *`touch`* - creates a new file inside the working directory. It takes in a file name as an argument, and then creates a new empty file in the current working directory
+
+
+```yaml
+$ touch staff_list.txt
+```
+
+
+---
+* *`grep`* - stands for “global regular expression print”. It searches files for lines that match a pattern and returns the results. __*Note*__: It is case *__sensitive__*.
+
+```yaml
+$ grep "Ronaldo" player_names.txt
+```
+
+---
+* *`grep -i`* - when `grep` is used with the `-i` option it allows for the enables the command to be case *__insensitive__*
+
+```yaml
+$ grep "Ronaldo" player_names.txt
+```
+
+
+---
+* *`grep -R`* - when `grep` is used with the `-R` option, it searches all files in a directory and outputs filenames and lines containing matched results. `-R` stands for “recursive”.
+
+```diff
+-Example to be found
+```
+
+---
+* *`grep -RI`* - when `grep` is used with the `-RI` option, it ssearches all files in a directory and outputs only filenames with matched results. `-R` stands for “recursive” and `l` stands for “files with matches”.
+
+```diff
+- Example to be found
+```
+
+
 ---
 * `>` takes the standard output of the command on the left and redirects it to the file on the right. For example:
 ```yaml
