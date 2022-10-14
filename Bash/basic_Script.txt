@@ -2,6 +2,7 @@
 
 #!/bin/bash
 
+#scho command is used to output data
 echo "Hello, what is your name?"
 
 #the user's input is saved to the name variable 
