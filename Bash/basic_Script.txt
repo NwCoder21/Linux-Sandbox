@@ -1,0 +1,12 @@
+# This script takes in a user's input as their name and greets them
+
+#!/bin/bash
+
+echo "Hello, what is your name?"
+
+#the user's input is saved to the name variable 
+read name
+
+#the $ symbol is used to access the name variable
+echo "Hello $name, nice to meet you!"
+
