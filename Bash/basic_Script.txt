@@ -1,13 +1,14 @@
-# This script takes in a user's input as their name and greets them
+# This script takes in a user's name as input and greets them
 
+# The Shebang needs to be to the the top of the every script
 #!/bin/bash
 
-#scho command is used to output data
+# echo command is used to output data to the console
 echo "Hello, what is your name?"
 
-#the user's input is saved to the name variable 
+# The user's input is saved to the name variable 
 read name
 
-#the $ symbol is used to access the name variable
+# The $ symbol is used to access the name variable and personalise the greeting
 echo "Hello $name, nice to meet you!"
 
