@@ -177,6 +177,36 @@ $ grep -n "Ronaldo" player_names.txt
 $ grep -nC "Ronaldo" player_names.txt
 ```
 
+
+## Using `grep`to filter the output of another command 
+
+`grep` can be used to filter the results of a search. To achieve this, the user needs to pipe the output of the command via grep. The symbol `|` is used to to pipe.  
+
+For example, the user searches for all files which have the .txt extension:
+
+```yaml
+$ ls -l *.txt
+```
+
+This will output all the files which have .txt as an extension
+
+```yaml
+$ ls -l *.txt
+-rw-r--r--  1 test_user       1248 Feb 21 11:01 england.txt
+-rw-r--r--  1 test_user       8462 Dec 22 17:13 france.txt
+-rw-r--r--  1 test_user       0124 Apr 21 18:52 italy.txt
+-rw-r--r--  1 test_user      12345 Jan 22 22:34 spain.txt
+-rw-r--r--  1 test_user       0972 Sep 21 23:13 Germany.txt
+$
+```
+
+To narrow our search down and only output those files which have Ronaldo, we can use the `|` and grep:
+
+```yaml
+$ ls -l *.txt | grep Ronaldo
+-rw-r--r--  1 test_user       1248 Feb 21 11:01 england.txt
+```
+
 ## `grep -R`
 
 When `grep` is used with the `-R` option, it searches all files in a directory and outputs filenames and lines containing matched results. `-R` stands for “recursive”.
