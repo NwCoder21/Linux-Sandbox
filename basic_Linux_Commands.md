@@ -16,7 +16,7 @@ Home Documents Desktop football.txt
 ```
 
 
-## *`ls -a`* 
+## `ls -a` 
 
 Lists all contents in the working directory, including hidden files and directories
 ```yaml
@@ -25,7 +25,7 @@ $ ls -a
 ```
 
 
-## *`ls -l`* 
+## `ls -l` 
 
 Lists all contents of a directory in long format. 
 ```yaml
@@ -35,14 +35,14 @@ $ ls -l
 
 
 
-## *`ls -t`* 
+## `ls -t` 
 
 Orders files and directories by the time they were last modified
 ```yaml
 $ ls -t
 ```
 
-## *`mkdir`* 
+## `mkdir`
 
 Takes in a directory name as an argument, and then creates a new directory in the current working directory. Here we used mkdir to create a new directory named games/.
 
@@ -50,7 +50,7 @@ Takes in a directory name as an argument, and then creates a new directory in th
 $ mkdir games
 ```
 
-## *`mv`* 
+## `mv`
 
 To move a file into a directory, use mv with the source file as the first argument and the destination directory as the second argument. Here we move pens.txt into stationery/.
 
@@ -60,7 +60,7 @@ $ mv pens.txt stationery/
 *__Note__*: The mv command moves files and directories from one directory to another or renames a file or directory. When moving a file or directory to a new directory, it will keep its name. 
 
 
-## *`rm`* 
+## `rm`
 
 Deletes files. The following command removes the file footbal_players.txt from the file system
 
@@ -69,7 +69,7 @@ $ rm football_players.txt
 ```
 
 
-## *`rmdir`* 
+## `rmdir`
 
 Deletes directories. Only works on empty directories; otherwise you get an error
 * 
@@ -79,7 +79,7 @@ $ rmdir games
 
 
 
-## *`rm -r`* 
+## `rm -r`
 
 The command `rm` with the option `-r` deletes a directory and all of its child directories. Here, the teams directory is being deleted along wiht any files and/or directories it contains
 
@@ -88,7 +88,7 @@ $ rm -r teams
 ```
 
 
-## *`rm -f`* 
+## `rm -f` 
 
 The command `rm` with the option `-f` forcefully removes a file. Here, the flowers.txt file  being deleted
 
@@ -98,7 +98,7 @@ $ rm -f flowers.txt
 
 
 
-## *`rm -i`* 
+## `rm -i`
 
 The command `rm` with the option `-f` interactively removes a file. Here, the flowers.txt file  being deleted.
 
@@ -110,7 +110,7 @@ $ rm -i flowers.txt
 
 
 
-## *`sort`*
+## `sort`
 
 Takes a filename or standard input and orders each line alphabetically, printing it to standard output. In the example below, the names of the football players will be outputted in alphabetical order 
 
@@ -120,7 +120,7 @@ $ sort player_names.txt
 ```
 
 
-## *`touch`* 
+## `touch`
 
 Creates a new file inside the working directory. It takes in a file name as an argument, and then creates a new empty file in the current working directory
 
@@ -131,7 +131,7 @@ $ touch staff_list.txt
 
 
 
-## *`touch`* 
+## `touch`
 
 Creates a new file inside the working directory. It takes in a file name as an argument, and then creates a new empty file in the current working directory
 
@@ -142,7 +142,7 @@ $ touch staff_list.txt
 
 
 
-## *`grep`* 
+## `grep` 
 
 Stands for “global regular expression print”. It searches files for lines that match a pattern and returns the results. __*Note*__: It is case *__sensitive__*.
 
@@ -151,7 +151,7 @@ $ grep "Ronaldo" player_names.txt
 ```
 
 
-## *`grep -i`* 
+## `grep -i` 
 
 When `grep` is used with the `-i` option it allows for the enables the command to be case *__insensitive__*
 
@@ -159,9 +159,25 @@ When `grep` is used with the `-i` option it allows for the enables the command t
 $ grep "Ronaldo" player_names.txt
 ```
 
+## `grep -n`
+
+When `grep` is used with the `-n` option, it will also show the line number in the result
+
+```yaml
+$ grep -n "Ronaldo" player_names.txt
+```
 
 
-## *`grep -R`* 
+
+## `grep -C`
+
+ The `-C` option is used with `grep` to show some contect to the result. For example, we want to also see 3 lines before and 3 lines after the line we have searched for:
+
+```yaml
+$ grep -nC "Ronaldo" player_names.txt
+```
+
+## `grep -R`
 
 When `grep` is used with the `-R` option, it searches all files in a directory and outputs filenames and lines containing matched results. `-R` stands for “recursive”.
 
@@ -169,7 +185,7 @@ When `grep` is used with the `-R` option, it searches all files in a directory a
 -Example to be found
 ```
 
-## *`grep -RI`* 
+## `grep -RI` 
 
 When `grep` is used with the `-RI` option, it ssearches all files in a directory and outputs only filenames with matched results. `-R` stands for “recursive” and `l` stands for “files with matches”.
 
