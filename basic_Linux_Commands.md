@@ -100,7 +100,7 @@ $ rm -f flowers.txt
 
 ## `rm -i`
 
-The command `rm` with the option `-f` interactively removes a file. Here, the flowers.txt file  being deleted.
+The command `rm` with the option `-i` interactively removes a file. Here, the flowers.txt file  being deleted.
 
 ```yaml
 $ rm -i flowers.txt
