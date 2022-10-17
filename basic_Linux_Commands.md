@@ -49,6 +49,22 @@ Takes in a directory name as an argument, and then creates a new directory in th
 ```yaml
 $ mkdir games
 ```
+> Note: directories are case-senstive. 
+
+---
+
+Can create multple directories in one command by having a space between each directory, such as: 
+
+```yaml
+$ mkdir games work home
+```
+---
+
+Can also create a directory which has a space in it using quote marks `""`. For example, to create a folder named 'Fruits and Veg', we will type: 
+
+```yaml
+$ mkdir "fruit and veg"
+```
 
 ## `mv`
 
@@ -140,7 +156,14 @@ Creates a new file inside the working directory. It takes in a file name as an a
 $ touch staff_list.txt
 ```
 
+## `less`
 
+Creates a new file inside the working directory. It takes in a file name as an argument, and then creates a new empty file in the current working directory
+
+
+```yaml
+$ touch staff_list.txt
+```
 
 ## `grep` 
 
