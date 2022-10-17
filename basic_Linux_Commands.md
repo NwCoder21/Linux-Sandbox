@@ -65,6 +65,17 @@ Can also create a directory which has a space in it using quote marks `""`. For 
 ```yaml
 $ mkdir "fruit and veg"
 ```
+> Note: when attempting to move in this folder, we will either use a backslash `\`:
+
+```yaml
+$ mkdir fruit\ and\ veg
+```
+or:
+
+```yaml
+$ mkdir "fruit and veg"
+```
+
 
 ## `mv`
 
