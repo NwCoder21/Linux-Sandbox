@@ -49,6 +49,9 @@ This is how it would look when deleting a folder recursively whilst using the `-
 ![image](https://user-images.githubusercontent.com/107522496/196635464-3e34ae5d-739b-480a-a632-9b6b5cce45f9.png)
 
 
+Multiple single files can also be deleted using `rm -i`:
+
+![image](https://user-images.githubusercontent.com/107522496/196636889-882b169b-442c-4d00-878b-ff13619399fd.png)
 
 
 
