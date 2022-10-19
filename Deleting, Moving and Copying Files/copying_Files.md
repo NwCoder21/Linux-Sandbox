@@ -29,6 +29,21 @@ Deletes empty directories. Only works on empty directories, otherwise an error w
 
 ---
 
+# `rm -r` 
+
+Deletes a folder and all its child directories too
+
+![image](https://user-images.githubusercontent.com/107522496/196631884-727efcd1-c418-4412-81f5-de9b00e47469.png)
+
+---
+# `rm -i` 
+
+When using the `-i` option with rm, the system will ask you to confirm if you want to delete or not
+
+![image](https://user-images.githubusercontent.com/107522496/196632285-00ffe413-9f22-40f9-beb7-eeec872ba237.png)
+
+
+
 
 
 
