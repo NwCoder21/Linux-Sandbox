@@ -40,7 +40,11 @@ Deletes a folder and all its child directories too
 
 When using the `-i` option with rm, the system will ask you to confirm if you want to delete or not
 
-![image](https://user-images.githubusercontent.com/107522496/196632285-00ffe413-9f22-40f9-beb7-eeec872ba237.png)
+![image](https://user-images.githubusercontent.com/107522496/196634574-78d0f81b-f7fd-411c-9023-698a8da8e2f6.png)
+
+
+
+This is how it would look when deleting a folder recursively: 
 
 
 
