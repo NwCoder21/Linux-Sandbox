@@ -40,8 +40,7 @@ Deletes a folder and all its child directories too
 
 When using the `-i` option with rm, the system will ask you to confirm if you want to delete or not
 
-![image](https://user-images.githubusercontent.com/107522496/196632285-00ffe413-9f22-40f9-beb7-eeec872ba237.png)
-
+![image](https://user-images.githubusercontent.com/107522496/196634990-9d10bdc8-df91-4cc1-b7eb-681d2bd3615c.png)
 
 
 
