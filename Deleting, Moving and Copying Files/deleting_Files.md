@@ -1,4 +1,4 @@
-# How to Copy Files and Directories 
+# How to Delete Files and Directories 
 
 ## `rm`
 
