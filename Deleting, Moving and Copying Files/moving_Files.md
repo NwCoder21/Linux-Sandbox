@@ -31,6 +31,24 @@ Note: if the destination is a directory, do not forget the `/`.
 
 ---
 
+### Moving a file up one directory 
+
+Can also move a file up one directory using `..`. for example:
+
+![image](https://user-images.githubusercontent.com/107522496/196730245-7093f27b-7f14-4598-b4af-88050df31f97.png)
+
+
+
+
+
+
+
+
+
+
+
+---
+
 # Renaming a File
 
 To rename a file, the first argument will be the old file name and the second argument will be the new file name. For example: 
