@@ -1,4 +1,4 @@
-# How to Move Files and Directories 
+# How to Move Files
 
 # `mv`
 
@@ -43,6 +43,33 @@ here, the test4 file will be renamed as test5
 
 
 ---
+
+# How to Move Directories 
+
+> When moving folders, don't have to be in same folder as the directories you want to move. Just need to use the correct path
+
+```yaml
+$ mv folder1/ folder2/ 
+```
+This will move folder1 into folder2. 
+
+> Note: When moving one folder to another, have to ensure the destination directory exists, otherwise the folder (source) will be renamed as the destination folder
+
+> Important! - If just trying to move something to a new place, but you want the name to stay the same, need to remember that the destination folder needs to already exist
+---
+
+Can also move multiple directories into a directory. For example: 
+
+```yaml
+$ mv folder1/ folder2/ folder3/ folder4/ collections/ 
+```
+here, folder1, folder2, folder3, and folder4 will be moved into the collections directory. 
+
+
+
+
+
+
 
 
 
