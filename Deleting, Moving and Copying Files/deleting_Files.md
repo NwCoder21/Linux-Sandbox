@@ -44,7 +44,7 @@ When using the `-i` option with rm, the system will ask you to confirm if you wa
 
 
 
-This is how it would look when deleting a folder recursively: 
+This is how it would look when deleting a folder recursively whilst using the `-i` option: 
 
 ![image](https://user-images.githubusercontent.com/107522496/196635464-3e34ae5d-739b-480a-a632-9b6b5cce45f9.png)
 
