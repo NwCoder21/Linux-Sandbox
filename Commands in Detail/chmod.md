@@ -55,9 +55,9 @@ To change a file's permissions using symbolic arguments, we:
 * `g`: this means the group
 * `o`: this means others
 
-3. Followed by: 
-* To add permissions, we use the `+` symbol
-* To remove permissions, we use the `-`symbol
+3. Followed by either: 
+* The `+` symbol - to add permissions 
+* The `-` symbol - to remove permissions 
 
 4. Followed by the permission/s you want to allocate or de-allocate:
 
