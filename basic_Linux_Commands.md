@@ -169,11 +169,8 @@ $ touch staff_list.txt
 
 ## `less`
 
-Creates a new file inside the working directory. It takes in a file name as an argument, and then creates a new empty file in the current working directory
-
-
-```yaml
-$ touch staff_list.txt
+```diff
+-Example to be found
 ```
 
 ## `grep` 
