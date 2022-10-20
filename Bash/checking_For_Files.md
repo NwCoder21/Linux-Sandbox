@@ -8,7 +8,7 @@ The if statement can be used in Bash to test for file attributes, such as:
 
 ---
 
-The following table is a lost of conditions and their meaning 
+The following table is a list of conditions and their meaning 
 
 | **Condition**|  **Meaning**|
 | :-----------: | :-----------  |
