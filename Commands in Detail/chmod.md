@@ -108,6 +108,15 @@ When using numeric values to set or remove permissions, certain values represent
 * 1: execute
 * 0: none
 
+Three values are entered with the `chmod` command. 
+
+* The first represents the user's permissions
+* The second represents the group's permissions
+* The third represents others' permissions.
+
+For example: 
+
+![image](https://user-images.githubusercontent.com/107522496/196978923-f7d89f4d-1ec9-406a-a95b-a2a968394b0c.png)
 
 
 
