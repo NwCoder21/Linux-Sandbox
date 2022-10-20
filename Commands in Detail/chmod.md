@@ -69,9 +69,23 @@ To change a file's permissions using symbolic arguments, we:
 
 ![image](https://user-images.githubusercontent.com/107522496/196946508-6a2e0446-7ff8-4df8-957c-0925d3a24ec3.png)
 
-* `chmod o-r test1` is removing the read permissions from `others`
-* `chmod g-rw test1` is removing the read and write permissions from the `group`
-* `chmod u-rw test1` is removing the read and write permissions from the `user`
+* *`chmod o-r test1`* is removing the read permissions from `others`
+* *`chmod g-rw test1`* is removing the read and write permissions from the `group`
+* *`chmod u-rw test1`* is removing the read and write permissions from the `user`
 
+---
+
+![image](https://user-images.githubusercontent.com/107522496/196948236-ecad1059-da7f-4d50-92a0-f7c646cc6691.png)
+
+* *`chmod u+rxw test1`* is adding the read, write and execute permissions to the `user`
+* *`chmod g+rw test1`* is adding the read and write permissions to the `group`
+* *`chmod o+r test1`* is adding the read permission to `others`
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/196949450-f2977e31-9b8f-42bd-a9f5-16f299698b79.png)
+
+* *`chmod a+rxw test2`* is adding the read, write and execute permissions to `everyone`
+* *`chmod a-x test2`* is removing the execute permissions from `everyone`
 
 
