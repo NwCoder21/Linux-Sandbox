@@ -90,11 +90,25 @@ To change a file's permissions using symbolic arguments, we:
 
 
 > Note: can add or rmeove permissions to/from multiple users by adding the relevant characters before the `+` or `-` symbol. For example: 
+> When editing a folder's permissions, can use the -r option to 
 
 ![image](https://user-images.githubusercontent.com/107522496/196950722-6dcdfc90-006d-4ecf-9343-39c2626b8a1f.png)
 
 ---
 # Numeric Arguments 
+
+When using numeric values to set or remove permissions, certain values represent certain permissions. They are:
+
+* 7: read, write and execute
+* 6: read and write 
+* 5: read and execute
+* 4: read 
+* 3: write and execute
+* 2: write
+* 1: execute
+* 0: none
+
+
 
 
 
