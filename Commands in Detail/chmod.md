@@ -30,14 +30,14 @@ Then we have three sets of values
 
 * Red: these are the owner's permissions 
 * Yellow: these are the group's permissions
-* Blue: these are everybod else's permissions
+* Blue: these are everybody else's permissions
 
-Each set of values can be represented by one outof four characters. They are:
+Each set of values can be represented by one out of four characters. They are:
 
 * `r`: reading permission 
 * `w`: writing permission 
 * `x`: execution permission
-# `-`: this means that user does that have this specific permission 
+* `-`: this means that user does that have this specific permission 
 
 ---
 
