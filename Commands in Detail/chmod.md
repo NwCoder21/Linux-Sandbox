@@ -43,7 +43,7 @@ Each set of values can be represented by one outof four characters. They are:
 
 A file's permissions are be able to be changed. To do this, we can use the `chmod` command either by using symbolic arguments or numeric arguments.
 
-## Symbolic arguments
+# Symbolic Arguments
 
 To change a file's permissions using symbolic arguments, we: 
 
@@ -65,7 +65,7 @@ To change a file's permissions using symbolic arguments, we:
 * `w`: writing permission 
 * `x`: execution permission
 
-# Examples
+## Examples
 
 ![image](https://user-images.githubusercontent.com/107522496/196946508-6a2e0446-7ff8-4df8-957c-0925d3a24ec3.png)
 
@@ -87,5 +87,40 @@ To change a file's permissions using symbolic arguments, we:
 
 * *`chmod a+rxw test2`* is adding the read, write and execute permissions to `everyone`
 * *`chmod a-x test2`* is removing the execute permissions from `everyone`
+
+
+> Note: can add or rmeove permissions to/from multiple users by adding the relevant characters before the `+` or `-` symbol. For example: 
+
+![image](https://user-images.githubusercontent.com/107522496/196950722-6dcdfc90-006d-4ecf-9343-39c2626b8a1f.png)
+
+---
+# Numeric Arguments 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
