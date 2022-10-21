@@ -4,7 +4,7 @@ This command is used to find files by their name. There are two main ways of fin
 
 * `locate`: faster than `find`, searches the database entries to search for the files. The database needs to be updated before using `locate`, otherwise may not give up to date results.  `locate` searches the entire database. 
 
-> Locate is fast because uses that built in database file to search for things, and does not search in every folder and every file, rather looks in one database file which is 
+> Locate is fast because uses that built in database file to search for things, and does not search in every folder and every file, rather looks in one database file which is indexed. Can also provide it a path to search in.
 
 * `find`: this searches the filesystem. This makes is slower than `locate`. `find` has more options which can be used with it, such as searching by name, size, the time it was created. Also, `find`, by default, will search in the current directory   
 
@@ -15,14 +15,34 @@ Note: will have to update the database, using `sudo updatedb` before being able 
 
 ---
 
-If I wanted to search for a file which contained "man", I could use: 
+If I wanted to search for a file which contained "afri", I could use: 
+
+![image](https://user-images.githubusercontent.com/107522496/197206376-3e8c3813-ef7a-4a39-adda-344512e56a6b.png)
 
 
+> Doesn't matter where you are in filesystem, can give it a path to search in 
 
+---
 
+# `-i` option with `locate` to carry out an case-unsenstive search
 
+Use the `-i` option with `locate` to carry out an case-unsenstive search. For example: 
 
+![image](https://user-images.githubusercontent.com/107522496/197208226-19822663-ded7-4005-b9fa-93229567e8bf.png)
 
+# `-l` or `--limit` options to limit the results to a certain amount 
+
+To limit the amount of results returned, use the  `-l` or `--limit` options. For example: 
+
+![image](https://user-images.githubusercontent.com/107522496/197208699-e65b01fc-f421-480d-a376-fac30fff4680.png)
+
+---
+
+# `-e` (exists) - searching for files which actually exist
+
+This opton is used with `locate` when trying to find files which actually still exisit, and have not been deleted since the last time the database was updated.
+
+This is because, since the last time database was updated, any files which have been removed since, will still show up in results when using `locate`. The `-e` option ensures that only the files which have not been deleted since the last update, and still exist, are displayed.
 
 
 
