@@ -1,6 +1,6 @@
 #!/bin/bash
 
-the below link is the site we will be using to take the weather information
+#the below link is the site we will be using to take the weather information
 #curl "wttr.in/$1"
 
 #case statement tooutput depending on what user inputs
