@@ -1,6 +1,9 @@
 # df (disk free) 
 
-This command is used to retrieve information regarding the disk usage, total space and available space, of a file system.
+This command is used to retrieve information regarding the disk usage, total space and available space, of a file system
+
+The difference between the df command and the du command is that df provides a an ovrall figure for the amouunt of space being used on your filesystem as a whole. The du command provides a more accurate figure of any given directory or subdirectory.
+
 
 ## Syntax:
 ```yaml
