@@ -1,0 +1,44 @@
+#!/bin/bash
+
+the below link is the site we will be using to take the weather information
+#curl "wttr.in/$1"
+
+#case statement tooutput depending on what user inputs
+
+case $1 in
+
+# in case 1, if user enters 1 as an argument, the script will output 1 day of weather 
+        1)
+            
+                curl "wttr.in?m1"
+
+                ;;
+
+
+# in case 2, if user enters 2 as an argument, the script will output 2 day of weather 
+        2)
+
+                curl "wttr.in?m2"
+
+                ;;
+# in case 3, if user enters -l or --location as argument 1, and then a name of a location, the  script will output that location's weather for 3 days
+        -l | --location)
+
+                curl "wttr.in/$2" |  head -n -1
+
+                ;;
+
+# in all other cases, if user does not enter anything as an argument, the script will output 3 days weather report bases on the user's ip location   
+
+        *)
+
+          curl "wttr.in"
+
+                ;;
+
+esac
+
+
+
+
+
