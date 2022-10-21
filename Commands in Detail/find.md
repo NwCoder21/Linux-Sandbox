@@ -7,9 +7,26 @@ This command is used to recursively search for files or directories matching a c
 ```yaml
 $ find . <location to start search from> <option> <what to find> 
 ```
+
+or 
+
+
+
 The `-name` means the search will be case sensitive. To perform a case insensitive search, use the `-iname` option. See examples for both below:
 
 ![image](https://user-images.githubusercontent.com/107522496/197150178-7f3cedbe-d46c-42fe-a941-0849f91076a9.png)
+
+
+or can do
+
+ ## Syntax:
+```yaml
+$ find <location to start search from> <option> <what to find> 
+```
+
+without the `.`. For exampple:
+
+![image](https://user-images.githubusercontent.com/107522496/197203718-a2be475b-6810-4b7a-989c-6341990f041d.png)
 
 
 ---
