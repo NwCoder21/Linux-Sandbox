@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Script on checking system information
+
+echo "System Memory:"
+free -h
+
+echo "System Disk Usage:" 
+df -h
+
+echo "Uptime:"
+uptime
+
+exit
+
+
+
