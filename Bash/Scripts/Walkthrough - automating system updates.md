@@ -4,7 +4,7 @@
  
  ---
  
- ![image](https://user-images.githubusercontent.com/107522496/197343906-490afd91-bf95-43f4-8a8a-24660a5390c2.png)
+![image](https://user-images.githubusercontent.com/107522496/197344596-9a731fdc-32af-47ec-895e-ecaca1a6fd0c.png)
 
  Create and open a file using a text editor, in this case I will be using vim.
  
@@ -33,10 +33,15 @@ Can also use the `-yy`. This means when checking and installing updates, it will
 We can checking the permissions on the file by using the command ls -l. 
 We can see that it does not have the execute permission. To implement this, we use the chmod =x {name of script}.sh command.
 
+---
 
+![image](https://user-images.githubusercontent.com/107522496/197344486-190c2533-105b-430f-9561-6741b3722292.png)
 
+From the above, we can see that by running our script, `update-sys.sh`, our scripts runs the whole process of updating and upgrading.
 
+![image](https://user-images.githubusercontent.com/107522496/197344540-6bd98a60-2112-4ba7-a1f3-d5cf8acd1df4.png)
 
+All updates have now been installed.
 
 
 
