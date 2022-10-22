@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# This is a basic script to automate updating the system 
+
+sudo apt update
+
+sudo apt dist-upgrade
+
+exit
+
+
+
+
+
