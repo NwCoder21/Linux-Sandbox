@@ -43,6 +43,15 @@ From the above, we can see that by running our script, `update-sys.sh`, our scri
 
 All updates have now been installed.
 
+---
+
+# Running this script from anywhere 
+
+![image](https://user-images.githubusercontent.com/107522496/197344964-61c6ea97-1ee3-4dfe-9928-42d10119b2fa.png)
+
+Because we have added the examples directory to the PATH variable, this means we can run our script from anywhere. For example: 
+
+![image](https://user-images.githubusercontent.com/107522496/197345035-e18f9c73-3d8a-440a-b56f-08d0fc2fc744.png)
 
 
 
