@@ -25,4 +25,14 @@ Note: that there is no space between the variable name, the equals sign, or “H
 echo $greeting
 ```
 
+---
+
+# Variables 
+
+To delcare a variable 
+
+
+
+
+
 
