@@ -15,6 +15,7 @@ When using `top`, there are two sections displayed;
 * Summary dashboard (highlighted in red)2
 * Process List (highlighted in yellow)
 
+# Summary Dashboard in More Detail 
 
 The first line includes:
 
@@ -56,6 +57,34 @@ The fifth line contains:
 * how much of it is used
 * how much of it is available
 
+# Changing Numerical Units
+
+To change and cycle through different numerical units for the Summary Dashboard, enter `E`.
+To change and cycle through different numerical units for the Process List, enter `e`.
+
+These are the different types units which can be displayed:
+
+* kibibytes
+* mebibytes
+* gibibytes
+* tebibytes
+* pebibytes
+* exbibytes
+
+---
 
 
+# Process List in More Detail 
+
+
+```diff
+-To Be Completed 
+```
+
+
+
+
+
+
+Part of the information I have taken has been from https://www.howtogeek.com/668986/how-to-use-the-linux-top-command-and-understand-its-output/ 
 
