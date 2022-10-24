@@ -6,4 +6,4 @@ Some of the reources and tools I have used are as follows:
 
 * Edx
 * CodeCademy
-* Oracle's VirtualBox Program
+* Oracle's VirtualBox Software
