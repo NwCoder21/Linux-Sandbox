@@ -13,9 +13,10 @@
   *  To ensure that scripts in **`~/bin/`** are available, you must add this directory to your **`PATH`** within your configuration file:
 **`PATH=~/bin:$PATH`**. Now any scripts in the **`~/bin`** directory can be run from anywhere by typing the filename. 
 
-#### Variables
+# Variables
 
-* Variables are declared by setting the variable name equal to another value. For example, to set the variable greeting to “Hello”, you would use the following syntax:
+* Variables are declared by setting the variable name equal to another value. For example, to set the variable `greeting` to “Hello”, you would use the following syntax:
+* 
 ```console
 greeting="Hello"
 ```
@@ -26,12 +27,6 @@ echo $greeting
 ```
 
 ---
-
-# Variables 
-
-To delcare a variable 
-
-
 
 
 
