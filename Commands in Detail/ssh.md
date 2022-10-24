@@ -1,4 +1,4 @@
-`ssh` - Secure Shell 
+# `ssh` - Secure Shell 
 
 This command allows the user to connect to a remote machine/server securely as communication between the two devices in encrypted.
 
