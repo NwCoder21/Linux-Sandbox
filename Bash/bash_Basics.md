@@ -46,6 +46,32 @@ The below script would add the value `Hello World!!` to the variable `openingGre
 * `else` will start the code whcih is run if the condition is not met.
 * `fi` the condition is closed with a `fi`, this is `if` but backwards. 
 
+---
 
+# Comparison Operators 
 
+> Table of comparison operators for numbers which can be used within bash scripts:
+
+| **Operator**|  **In Bash**|
+| :-----------: | :-----------: |
+| Equal|-eq|
+| Not equal|-ne|
+| Less than or equalt to|-le|
+| Less than|-lt|
+| Greater than or equal|-ge|
+| Greater than|-gt|
+| Is null|-z|
+
+When comparing strings: 
+
+| **Operator**|  **In Bash**|
+| :-----------: | :-----------: |
+| Equal| == |
+| Not equal| != |
+
+* Wrap the variables in quote marks `"` as this will prevent from errors occuring if the variable is null or contains spaces. 
+
+```console
+if [ "$name1" == "$name2" ]
+```
 
