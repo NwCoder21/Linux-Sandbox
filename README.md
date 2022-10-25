@@ -6,4 +6,6 @@ Some of the reources and tools I have used are as follows:
 
 * Edx
 * CodeCademy
+* Udemy
+* LinkedIn Learning
 * Oracle's VirtualBox Software
