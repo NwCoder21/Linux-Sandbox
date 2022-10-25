@@ -95,6 +95,15 @@ For example, a script which needs to output an opening greeting three times and 
 
 > Note: in bash scripting, arthmetic statements take place between the $((...)) syntax and the `$` comes before the brackets, not directly before the variable.
 
+This script could als be written using an `until` loop. For example: 
+
+![image](https://user-images.githubusercontent.com/107522496/197718899-a1bb5113-2d8c-4f0d-bdd1-791045fe5b3d.png)
+
+and we would get the same output:
+
+![image](https://user-images.githubusercontent.com/107522496/197719191-f3807c58-33f5-4880-93bb-ca5ec5305651.png)
+
+---
 
 
 
