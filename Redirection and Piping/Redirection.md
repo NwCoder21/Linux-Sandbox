@@ -78,6 +78,20 @@ Here, the contents of `animals.txt` have been sent (**appended**)) to the end of
 
 This is another example. we have a file named files.txt which contains the files in that directory. Then using the `>>` command, we can append the output of `date` to the end of files.txt. The original text remains when using `>>`.
 
+---
+
+The standard output for the `echo` command is to the terminal. However, we can, using redirection, quickly create a file and send the output of `echo` to file instead.
+
+For example, to create a file called greeting.txt and write "hello world" into it, we would have to take the following steps:
+
+![image](https://user-images.githubusercontent.com/107522496/197809975-94a1ef6f-df34-4b92-b5be-d30d222661d4.png)
+
+However, we can achieve the same thing using redirection. For example:
+
+![image](https://user-images.githubusercontent.com/107522496/197810726-552fa260-88db-4f7f-8654-74ccd4b768d9.png)
+
+
+
 
 
 
