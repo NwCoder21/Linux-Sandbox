@@ -156,10 +156,9 @@ We can see these are in actual fact the files in the fruits directory by going i
 
 # Aliases
 
-To call a script without having to use its full filename, we can set up an alias for it in the `.bashrc` file.
+To call a script without having to use its full filename, we can set up an alias for it in the `.bashrc` file. Think of these as shortcuts and can define our commands usiing the `alias` keyword. 
 
-For example, to make an an alias for the weather.sh script, we can do:
-
+For example, to make an an alias for the weather.sh command, we can do:
 
 ```yaml 
 alias weath="./weather.sh"
