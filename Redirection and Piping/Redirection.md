@@ -37,7 +37,13 @@ In the above example, `Hello World!!` would be redirected to the `greeting.txt` 
 
 This `>` symbol is used to redirect standard output. It  takes the takes the standard output of the command to its left, and redirects it to the file to its right. 
 
-> Important: `>` overwrites the contents of a file. To know how to append data onto the end of a file, see the next section. 
+> IMPORTANT!!: `>` overwrites the contents of a file. For example:
+
+![image](https://user-images.githubusercontent.com/107522496/197796581-8c601107-db34-4aa7-93c7-190cd600d82a.png)
+
+> To know how to append data onto the end of a file, see the next section. 
+
+---
 
 ![image](https://user-images.githubusercontent.com/107522496/197794301-d42907de-cb86-40fe-932f-e6af0a53a734.png)
 
@@ -52,13 +58,6 @@ In the above example, we are taking the contents of the `cities.txt` file and se
 We can confirm that indeed this redirect has been successful by using the `cat`command on the new file:
 
 ![image](https://user-images.githubusercontent.com/107522496/197764218-9795681f-5dd4-4f9b-8b40-10abf4f32077.png)
-
-## IMPORTANT
- 
-
-
-![image](https://user-images.githubusercontent.com/107522496/197796581-8c601107-db34-4aa7-93c7-190cd600d82a.png)
-
 
 
 ---
