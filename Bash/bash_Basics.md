@@ -145,3 +145,16 @@ For example, if we wanted to print out all the scripts in current folder, we can
 
 If we wantted to print out the files in particular directory, we can use:  
 
+![image](https://user-images.githubusercontent.com/107522496/197741133-8a87360e-c4c7-47fa-99be-3ca063a8b8dd.png)
+
+![image](https://user-images.githubusercontent.com/107522496/197741204-a13aea81-cfbb-448f-8ef0-1fa8b2d4b2e6.png)
+
+We can see these are in actual fact the files in the fruits directory by going into that folder directly, as seen below: 
+
+![image](https://user-images.githubusercontent.com/107522496/197741394-e4028e7b-132d-492a-9c11-0e121e6db589.png)
+
+
+---
+
+
+
