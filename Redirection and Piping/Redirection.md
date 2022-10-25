@@ -30,6 +30,8 @@ In the above example, `Hello World!!` would be redirected to the `greeting.txt` 
 # `>`
 The `>` command takes the takes the standard output of the command to its left, and redirects it to the file to its right. 
 
+> Important: `>` overwrites the contents of a file. Too know how to append data onto the end of a file, see the next section. 
+
 ![image](https://user-images.githubusercontent.com/107522496/197763872-d8559b55-63a5-476f-b007-817aef207df4.png)
 
 In the above example, we are taking the contents of the `cities.txt` file and sending it (redirecting it) to the `namesofcities.txt` file. Because we have redirected the output to a file, we won't see the output on the terminal.
@@ -38,7 +40,16 @@ We can confirm that indeed this redirect has been successful by using the `cat`c
 
 ![image](https://user-images.githubusercontent.com/107522496/197764218-9795681f-5dd4-4f9b-8b40-10abf4f32077.png)
 
+---
 
+# `>>`
+
+The `>>` allows to add text to a file without losing the original text.
+
+![image](https://user-images.githubusercontent.com/107522496/197770528-570fe7d1-6efc-4e12-960e-a090cb67f7d2.png)
+
+
+Here, the contents of `animals.txt` have been sent to the end of the contents of `greeting.txt`. The orginal text of `greeting.txt` remains. 
 
 
 
