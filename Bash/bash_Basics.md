@@ -123,6 +123,11 @@ For example:
 
 ![image](https://user-images.githubusercontent.com/107522496/197723988-3f0af7e1-d2cc-4b44-9f9f-6598322ed562.png)
 
+To access all the arguments entered by the user, we can use `$@`. For example: 
+
+![image](https://user-images.githubusercontent.com/107522496/197726592-e248128f-4943-46eb-bf33-6db7dadb3af7.png)
+
+![image](https://user-images.githubusercontent.com/107522496/197726686-e454ec60-8d8e-4407-ab29-64e7e4ac929c.png)
 
 
 
