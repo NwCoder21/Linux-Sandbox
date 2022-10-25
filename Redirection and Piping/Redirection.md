@@ -24,7 +24,24 @@ In the above example, `Hello World!!` would be redirected to the `greeting.txt` 
 
 ![image](https://user-images.githubusercontent.com/107522496/197761925-2ce542de-981e-4402-93fe-64c46ee7b838.png)
 
+
 ---
+
+# `>`
+The `>` command takes the takes the standard output of the command to its left, and redirects it to the file to its right. 
+
+![image](https://user-images.githubusercontent.com/107522496/197763872-d8559b55-63a5-476f-b007-817aef207df4.png)
+
+In the above example, we are taking the contents of the `cities.txt` file and sending it (redirecting it) to the `namesofcities.txt` file. Because we have redirected the output to a file, we won't see the output on the terminal.
+
+We can confirm that indeed this redirect has been successful by using the `cat`command on the new file:
+
+![image](https://user-images.githubusercontent.com/107522496/197764218-9795681f-5dd4-4f9b-8b40-10abf4f32077.png)
+
+
+
+
+
 
 
 
