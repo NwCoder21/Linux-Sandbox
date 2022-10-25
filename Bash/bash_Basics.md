@@ -105,7 +105,23 @@ and we would get the same output:
 
 ---
 
+# Inputs
 
+One way to take input from user, and add it to a variable, is by using the `read` keyword is used. For example: 
+```console
+echo "What is your name"
+read userName 
+```
+
+Another way to take input from a user is by using arguments. These are entered by the user when running the script, and accesssed usinng $1, $2, $3, etc.
+
+> Note: these are 1 indexed. 
+
+For example: 
+
+![image](https://user-images.githubusercontent.com/107522496/197723927-1eeb9138-4427-4aaf-8db8-dafd6ad8ad12.png)
+
+![image](https://user-images.githubusercontent.com/107522496/197723988-3f0af7e1-d2cc-4b44-9f9f-6598322ed562.png)
 
 
 
