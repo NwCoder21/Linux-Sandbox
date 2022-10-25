@@ -10,14 +10,18 @@ There are three types of communication streams between a computer program and it
 
 ---
 
-# Standard Out
+# Redirecting Standard Output
+
+When talking about redirecting standard output and standard error, it means redirecting them do a different output detination other than the default destination, for example, to another command or file. 
+
+> The default destination for standard output and standard error is the terminal. 
 
 If the below commmand was run:
 
 ```console
 echo "Hello World!!"
 ```
-Here, `Hello World!!` is entered as the standard input and `Hello World!!` is then outputted to the terminal as standard out. However, we can redirect the output to a file instead of directing it to the terminal. To do this, we would use the `>` command followed by the filename of where we want to send the output. 
+Here, `Hello World!!` is entered as the standard input and `Hello World!!` is then outputted to the terminal as standard out (as this is the default destination for output). However, we can redirect the output to a file instead of directing it to the terminal. To do this, we would use the `>` command followed by the filename of where we want to send the output. 
 
 ```console
 echo "Hello World!!" > greeting.txt
@@ -30,7 +34,8 @@ In the above example, `Hello World!!` would be redirected to the `greeting.txt` 
 ---
 
 # `>`
-The `>` command takes the takes the standard output of the command to its left, and redirects it to the file to its right. 
+
+This `>` symbol is used to redirect standard output. It  takes the takes the standard output of the command to its left, and redirects it to the file to its right. 
 
 > Important: `>` overwrites the contents of a file. Too know how to append data onto the end of a file, see the next section. 
 
@@ -51,7 +56,7 @@ The `>>` allows to add text to a file without losing the original text.
 ![image](https://user-images.githubusercontent.com/107522496/197770528-570fe7d1-6efc-4e12-960e-a090cb67f7d2.png)
 
 
-Here, the contents of `animals.txt` have been sent to the end of the contents of `greeting.txt`. The orginal text of `greeting.txt` remains. 
+Here, the contents of `animals.txt` have been sent (**appended**)) to the end of the contents of `greeting.txt`. The orginal text of `greeting.txt` remains. 
 
 
 
