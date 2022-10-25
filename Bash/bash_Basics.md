@@ -16,17 +16,35 @@
 # Variables
 
 * Variables are declared by setting the variable name equal to another value. For example, to set the variable `greeting` to “Hello”, you would use the following syntax:
-* 
 ```console
 greeting="Hello"
 ```
-Note: that there is no space between the variable name, the equals sign, or “Hello”.
+> Note: there should be no spaces between the variable name, the equals sign, or “Hello” (the value).
+
 * To access the value of a variable, we use the variable name prepended with a dollar sign ($). In the previous example, if we want to print the variable value to the screen, we use the following syntax:
 ```console 
 echo $greeting
 ```
+---
+
+The below script would add the value `Hello World!!` to the variable `openingGreeting` and then print it out to the screen. 
+
+![image](https://user-images.githubusercontent.com/107522496/197706656-92f5ddfe-05e4-49be-8bf0-509f70767d0d.png)
 
 ---
+
+# Conditionals 
+
+* Conditionals are used to control what set of commands are run within a script. 
+* An if statement will start with a `if` followed by the condition, which will be in between a pair of square brackets.
+
+> Important! - Remember to leave a space betweeen both of the square brackets and the conditional statement.
+
+![image](https://user-images.githubusercontent.com/107522496/197709581-4ebe6e00-47fd-494d-b9ca-11b6cc6a82f1.png)
+
+* `then` will start the code which is run if the condition is met.
+* `else` will start the code whcih is run if the condition is not met.
+* `fi` the condition is closed with a `fi`, this is `if` but backwards. 
 
 
 
