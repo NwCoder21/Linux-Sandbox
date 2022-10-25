@@ -37,7 +37,7 @@ In the above example, `Hello World!!` would be redirected to the `greeting.txt` 
 
 This `>` symbol is used to redirect standard output. It  takes the takes the standard output of the command to its left, and redirects it to the file to its right. 
 
-> IMPORTANT!!: `>` overwrites the contents of a file. For example:
+> IMPORTANT!!: `>` completely overwrites (erases and replaces) the contents of a file. For example:
 
 ![image](https://user-images.githubusercontent.com/107522496/197796581-8c601107-db34-4aa7-93c7-190cd600d82a.png)
 
@@ -64,13 +64,19 @@ We can confirm that indeed this redirect has been successful by using the `cat`c
 
 # `>>`
 
-The `>>` allows to add text to a file without losing the original text.
+When redirecting, tThe `>>` symbol allows to add text to end of a file without losing the original text.
 
 ![image](https://user-images.githubusercontent.com/107522496/197770528-570fe7d1-6efc-4e12-960e-a090cb67f7d2.png)
 
 
 Here, the contents of `animals.txt` have been sent (**appended**)) to the end of the contents of `greeting.txt`. The orginal text of `greeting.txt` remains. 
 
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/197807374-9b4a8df6-b1f7-4eea-9fb0-844bc411de8d.png)
+
+This is another example. we have a file named files.txt which contains the files in that directory. Then using the `>>` command, we can append the output of `date` to the end of files.txt. The original text remains when using `>>`.
 
 
 
