@@ -90,6 +90,41 @@ However, we can achieve the same thing using redirection. For example:
 
 ![image](https://user-images.githubusercontent.com/107522496/197810726-552fa260-88db-4f7f-8654-74ccd4b768d9.png)
 
+---
+
+# Redirecting Standard Input 
+ 
+To redirect the contents of a file to standard input, use the `<` symbol.
+
+![image](https://user-images.githubusercontent.com/107522496/197814351-d9bcc8ed-da32-4b9a-a80a-4fe2475459a7.png)
+
+ This comes more into play when using pipelines. However, the results of both commands may look the same, however, they are technically different.
+ 
+ ```console
+cat animals.txt
+```
+ In the above command, we aare passing `animals.txt` as an command line argument, to the command `cat` 
+ 
+ ```console
+cat < animals.txt
+```
+In the above line, we are passing the contents of `animals.txt` to `cat` via standard input. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
