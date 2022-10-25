@@ -50,7 +50,7 @@ The below script would add the value `Hello World!!` to the variable `openingGre
 
 # Comparison Operators 
 
-> Table of comparison operators for numbers which can be used within bash scripts:
+### Table of comparison operators for numbers which can be used within bash scripts:
 
 | **Operator**|  **In Bash**|
 | :-----------: | :-----------: |
@@ -62,7 +62,7 @@ The below script would add the value `Hello World!!` to the variable `openingGre
 | Greater than|-gt|
 | Is null|-z|
 
-When comparing strings: 
+### Table of comparison operators for strings which can be used within bash scripts:
 
 | **Operator**|  **In Bash**|
 | :-----------: | :-----------: |
