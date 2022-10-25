@@ -129,7 +129,19 @@ To access all the arguments entered by the user, we can use `$@`. For example:
 
 ![image](https://user-images.githubusercontent.com/107522496/197726686-e454ec60-8d8e-4407-ab29-64e7e4ac929c.png)
 
+---
+
+Can also access external files in a script. To do this, we can assign a set of files to a variable name using standard bash pattern matching using regular expressions.
+For example, to print out all the files in a certain directory, we can use `*`.
+
+For example, if we wanted to print out all the scripts in current folder, we can use the following script:
+
+![image](https://user-images.githubusercontent.com/107522496/197739710-6670509b-6bb0-44ea-8992-441ec79f2273.png)
+
+![image](https://user-images.githubusercontent.com/107522496/197739765-4e82c2f2-5211-4fbb-bfe3-ceca4275b260.png)
 
 
+---
 
+If we wantted to print out the files in particular directory, we can use:  
 
