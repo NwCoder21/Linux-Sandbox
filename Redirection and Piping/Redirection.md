@@ -39,6 +39,12 @@ This `>` symbol is used to redirect standard output. It  takes the takes the sta
 
 > Important: `>` overwrites the contents of a file. To know how to append data onto the end of a file, see the next section. 
 
+![image](https://user-images.githubusercontent.com/107522496/197794301-d42907de-cb86-40fe-932f-e6af0a53a734.png)
+
+In the above example, when typing the `ls` command, by default, the output is sent to the terminal and dispalyed. However, by using the `>` symbol, we can redirect this output to a file (in this case, files.txt). Hence, nothing will be displayed on the terminal. We can check if redirection has work by using the `cat` command with files.txt as its argument. 
+
+---
+
 ![image](https://user-images.githubusercontent.com/107522496/197763872-d8559b55-63a5-476f-b007-817aef207df4.png)
 
 In the above example, we are taking the contents of the `cities.txt` file and sending it (redirecting it) to the `namesofcities.txt` file. Because we have redirected the output to a file, we won't see the output on the terminal.
@@ -46,6 +52,14 @@ In the above example, we are taking the contents of the `cities.txt` file and se
 We can confirm that indeed this redirect has been successful by using the `cat`command on the new file:
 
 ![image](https://user-images.githubusercontent.com/107522496/197764218-9795681f-5dd4-4f9b-8b40-10abf4f32077.png)
+
+## IMPORTANT
+ 
+
+
+![image](https://user-images.githubusercontent.com/107522496/197796581-8c601107-db34-4aa7-93c7-190cd600d82a.png)
+
+
 
 ---
 
