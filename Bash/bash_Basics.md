@@ -74,4 +74,32 @@ The below script would add the value `Hello World!!` to the variable `openingGre
 ```console
 if [ "$name1" == "$name2" ]
 ```
+---
+
+# Loops
+
+Loops are used to iterate through a list and execute an action on every step. 
+
+* 3 different types of loops
+ * `for`
+ * `while`: keep looping as long as given condition is true 
+ * `until`: keep looping until the provided condition is true 
+
+> Loop conditions are written in the same way as if conditiona, between a pair of sqaure brackets.
+
+For example, a script which needs to output an opening greeting three times and then a final greeting would look like:
+
+![image](https://user-images.githubusercontent.com/107522496/197717627-7d74ff02-9ade-4266-8657-53bc0e6fa816.png)
+
+![image](https://user-images.githubusercontent.com/107522496/197717819-370d782e-9b4d-4bb1-956a-8aa47117a930.png)
+
+> Note: in bash scripting, arthmetic statements take place between the $((...)) syntax and the `$` comes before the brackets, not directly before the variable.
+
+
+
+
+
+
+
+
 
