@@ -140,7 +140,6 @@ For example, if we wanted to print out all the scripts in current folder, we can
 
 ![image](https://user-images.githubusercontent.com/107522496/197739765-4e82c2f2-5211-4fbb-bfe3-ceca4275b260.png)
 
-
 ---
 
 If we wantted to print out the files in particular directory, we can use:  
@@ -153,8 +152,18 @@ We can see these are in actual fact the files in the fruits directory by going i
 
 ![image](https://user-images.githubusercontent.com/107522496/197741394-e4028e7b-132d-492a-9c11-0e121e6db589.png)
 
-
 ---
+
+# Aliases
+
+To call a script without having to use its full filename, we can set up an alias for it in the `.bashrc` file.
+
+For example, to make an an alias for the weather.sh script, we can do:
+
+
+```yaml 
+alias weath="./weather.sh"
+```
 
 
 
