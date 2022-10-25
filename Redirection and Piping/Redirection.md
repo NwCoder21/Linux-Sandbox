@@ -37,7 +37,7 @@ In the above example, `Hello World!!` would be redirected to the `greeting.txt` 
 
 This `>` symbol is used to redirect standard output. It  takes the takes the standard output of the command to its left, and redirects it to the file to its right. 
 
-> Important: `>` overwrites the contents of a file. Too know how to append data onto the end of a file, see the next section. 
+> Important: `>` overwrites the contents of a file. To know how to append data onto the end of a file, see the next section. 
 
 ![image](https://user-images.githubusercontent.com/107522496/197763872-d8559b55-63a5-476f-b007-817aef207df4.png)
 
