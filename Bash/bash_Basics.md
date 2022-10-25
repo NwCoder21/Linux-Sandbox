@@ -158,11 +158,19 @@ We can see these are in actual fact the files in the fruits directory by going i
 
 To call a script without having to use its full filename, we can set up an alias for it in the `.bashrc` file. Think of these as shortcuts and can define our commands usiing the `alias` keyword. 
 
-For example, to make an an alias for the weather.sh command, we can do:
+For example, to make an an alias for the sys-info.sh command, which is a script which was written to output key system information (click [here](https://github.com/NwCoder21/Linux-Sandbox/blob/main/Bash/Scripts/Demo%20-%20Checking%20System%20Info.md) to see the full script, we can do:
 
 ```yaml 
-alias weath="./weather.sh"
+alias sys="./sys-info.sh"
 ```
+![image](https://user-images.githubusercontent.com/107522496/197746956-5c4c7b44-f198-4c9b-a41f-f66f8b01a1e2.png)
 
+![image](https://user-images.githubusercontent.com/107522496/197747016-28297282-f659-4a7b-ac18-b1adc83c3b96.png)
+
+![image](https://user-images.githubusercontent.com/107522496/197747063-c4017cd6-866c-46cf-8d76-46b2c3c6f684.png)
+
+We can see from the above, to run the `sys-info.sh` script now, all we need to type is `sys`
+
+---
 
 
