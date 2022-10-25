@@ -104,6 +104,20 @@ and we would get the same output:
 ![image](https://user-images.githubusercontent.com/107522496/197719191-f3807c58-33f5-4880-93bb-ca5ec5305651.png)
 
 ---
+# Incrementing Variable 
+
+Another way to increment a variable is by using the below sytax:
+
+```console
+((variable_name ++))
+```
+For example, the belows script will ask the user for a number and in a while loop, will increment it by minus one in each loop.:
+
+![image](https://user-images.githubusercontent.com/107522496/197755201-97397e97-d174-47b7-949d-18829c8ca2b6.png)
+
+![image](https://user-images.githubusercontent.com/107522496/197755457-74777259-5aad-49a1-8ccc-6682b12b2bd4.png)
+
+---
 
 # Inputs
 
