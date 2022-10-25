@@ -10,6 +10,8 @@ There are three types of communication streams between a computer program and it
 
 ---
 
+# Standard Out
+
 If the below commmand was run:
 
 ```console
