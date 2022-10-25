@@ -1,21 +1,19 @@
 # Bash Basics
 
-## These are some of the basics points which you need to keep in mind when starting out in Bash
+## These are some of the basic points which you need to keep in mind when starting out in Bash
 
 * Bash is very helpful in automating tasks and can help you save time and money
-* Any command which can be run in the Command Line can be run in a Bash Script
+* Any command which can be run on the Command Line can be run in a Bash Script
 
+* The only requirement for running a Bash script is to give it the “execute” permission. To add this permission to a file with filename: script.sh use **`chmod +x script.sh`**. However, the following points are also best practice:
+  *  The top of the script file should start with **`#!/bin/bash`** - most modern Linux OS's will default to assuming the use of the Bash kernal for scripting (when this line is omitted) but there are other kernals / scripting engines such as sh and ksh 
+  *  When saving your script file, save them in the **`~/bin/`** directory - script files can be stored anywhere but putting them in **`~/bin`** means that the author can call them from anywhere without further configuration
+  *  To ensure that scripts in **`~/bin/`** are available from anywhere, this directory must be present in the **`PATH`** variable within your configuration file:
+**`PATH=~/bin:$PATH`** (which is usually the default).  
 
-* The following conventions will allow your computer to excecute Bash scripts
-  *  The top of the script file should start with **`#!/bin/bash`** 
-  *  When saving your script file, save them in the **`~/bin/`** directory
-  *  The script files also need to have the “execute” permission to allow them to be run. To add this permission to a file with filename: script.sh use **`chmod +x script.sh`**
-  *  To ensure that scripts in **`~/bin/`** are available, you must add this directory to your **`PATH`** within your configuration file:
-**`PATH=~/bin:$PATH`**. Now any scripts in the **`~/bin`** directory can be run from anywhere by typing the filename. 
+# Script Variables
 
-# Variables
-
-* Variables are declared by setting the variable name equal to another value. For example, to set the variable `greeting` to “Hello”, you would use the following syntax:
+* Script variables are declared by setting the variable name equal to another value. For example, to set the variable `greeting` to “Hello”, you would use the following syntax:
 ```console
 greeting="Hello"
 ```
@@ -68,6 +66,13 @@ The below script would add the value `Hello World!!` to the variable `openingGre
 | :-----------: | :-----------: |
 | Equal| == |
 | Not equal| != |
+
+### Table of comparison operators for files which can be used within bash scripts:
+
+| **Operator**|  **In Bash**|
+| :-----------: | :-----------: |
+| File exists| -f |
+| Directory exists| -d |
 
 * Wrap the variables in quote marks `"` as this will prevent from errors occuring if the variable is null or contains spaces. 
 
@@ -129,7 +134,7 @@ read userName
 
 Another way to take input from a user is by using arguments. These are entered by the user when running the script, and accesssed usinng $1, $2, $3, etc.
 
-> Note: these are 1 indexed. 
+> Note: these arguents are 1 indexed as **`$0`** returns the script file name. 
 
 For example: 
 
