@@ -92,7 +92,7 @@ However, we can achieve the same thing using redirection. For example:
 
 ---
 
-# Redirecting Standard Input 
+# Redirecting Standard Input - `<`
  
 To redirect the contents of a file to standard input, use the `<` symbol.
 
@@ -124,7 +124,7 @@ In this example, becuase we have used the `>` symbol, the contents of greeting.t
 
 ---
 
-# Appending Data when Commbining the Redirection of Standard Input and Standard Output
+# Appending Data when Commbining the Redirection of Standard Input and Standard Output - `>>`
 
 To append data to a file when combining standard input and standard output, the `>>` can be used. For example, 
 
@@ -150,7 +150,7 @@ In this example, the data from the numbers.txt is being sent into the `sort` com
 
 ---
 
-# Redirecting Standard Error 
+# Redirecting Standard Error - `2>`
 
 By default, errors are outputted to the terminal. For example: 
 
@@ -162,6 +162,8 @@ Firstly, there is no command "echoo" so an error is sent to the terminal. Seoond
 
 ![image](https://user-images.githubusercontent.com/107522496/197995296-5b973959-c330-479a-a015-4479dc90294e.png)
 
+> Note: in this example, the reason why there is an error is because numbers.txtt is not a valid name.
+
 In the above example, even though we are redirecting standard output, the reason why the error shows up on the terminal is because errors are treated differently to output. 
 
 This means errors are, by default, sent to the terminal. However, the errors can be redirected.
@@ -172,8 +174,19 @@ Just the way we use `<` to redirect standard input, and use `>` and `>>` to redi
 
 Here, instead of outputting the error to the terminal, the error is being sent to the errors-log.txt file. 
 
+> Note: The reason why we may redirect errors is so to keep a log of them in a seperate file.
+
 ---
 
+# Appending Data when Redirecting Standard erorr - `2>> ` 
+
+To append data to an error log for example, the `2>>` symbol is used. For example: 
+
+![image](https://user-images.githubusercontent.com/107522496/197999459-2974367f-28e2-4c51-9fb1-84a633e63777.png)
+
+So, this is how we redirect standard error. Either redirecting it to a file or appendinng it to a file. 
+
+---
 
  
 
