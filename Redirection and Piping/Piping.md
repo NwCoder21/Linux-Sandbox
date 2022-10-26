@@ -17,6 +17,8 @@ In the above example, we are taking the output of `cat animals.txt` and send it 
 
 > Piping means taking the output of one command and sending it to the input of a second.
 
+---
+
 
 
 
