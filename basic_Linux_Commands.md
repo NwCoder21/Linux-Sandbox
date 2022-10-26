@@ -200,13 +200,11 @@ $ grep -n "Ronaldo" player_names.txt
 
 
 
-## `grep -C`
+## `grep -C` - Show Line Before and After Every Match 
 
- The `-C` option is used with `grep` to show some contect to the result. For example, we want to also see 3 lines before and 3 lines after the line we have searched for:
-
-```yaml
-$ grep -nC "Ronaldo" player_names.txt
-```
+ The `-B` (before) and the `-A` (after) options are used  `grep` to show some context to the result. For example, we want to also see 2 lines before and 2 lines after the line we have searched for:
+ 
+ ![image](https://user-images.githubusercontent.com/107522496/198036536-03950dac-2d0e-4bbb-b54f-c211d37690a4.png)
 
 
 ## Using `grep`to filter the output of another command 
