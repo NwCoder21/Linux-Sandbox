@@ -240,7 +240,11 @@ cat namesofcities.txt &> collection.txt
 cat namesofcities.txt &>> collection.txt 
 ```
 
-> Note: `&>` is used to redirect data to a file and overwrite any pre-existing data, whereas, the `&>>` appends the redirected data to the end of the file 
+> Note: `&>` is used to redirect data to a file and overwrite any pre-existing data, whereas, the `&>>` appends the redirected data to the end of the file. 
+> For example:
+
+![image](https://user-images.githubusercontent.com/107522496/198009453-2dfc3387-6891-4070-a8c7-4835a1610c15.png)
+
 
 
 
