@@ -19,7 +19,13 @@ In the above example, we are taking the output of `cat animals.txt` and send it 
 
 ---
 
+![image](https://user-images.githubusercontent.com/107522496/198063744-b7ce5c95-fcab-4dd7-83ab-c6af77971ef2.png)
 
+In the above example, we are looking at the long list of executables on the system. However, we could use piping to take the output of `ls /usr/bin -l` and send it to the `sort` command to be sorted according to size, and then outputted.
+
+![image](https://user-images.githubusercontent.com/107522496/198059326-f7637aef-9d69-435a-9051-e20c24ade619.png)
+
+ 
 
 
 
