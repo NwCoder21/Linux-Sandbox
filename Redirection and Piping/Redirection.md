@@ -178,7 +178,7 @@ Here, instead of outputting the error to the terminal, the error is being sent t
 
 ---
 
-# Appending Data when Redirecting Standard erorr - `2>> ` 
+# Appending Data when Redirecting Standard Error - `2>> ` 
 
 To append data to an error log for example, the `2>>` symbol is used. For example: 
 
@@ -187,9 +187,24 @@ To append data to an error log for example, the `2>>` symbol is used. For exampl
 So, this is how we redirect standard error. Either redirecting it to a file or appendinng it to a file. 
 
 ---
-
+ # TITLE TO COME SOON
  
+ Can also redirect multiple streams at one time.
+ 
+ * Can redirect standard out and standard error at the same time. For example:
+ 
+![image](https://user-images.githubusercontent.com/107522496/198004261-38e3aa01-3ff1-45fe-8def-456b1a4d661d.png)
 
+Here, we are taking the contents of two files, animals.txt and namesofcities.txt and redirecting (using `>`) it to a new file called collection.txt. If an error occurs when running this commmand, the error will be redirected (using `2>`) to a file named errors-log.txt.
+
+If the errors-log.txt file has already data in it and we don't want that data overwritten, we should use the `2>>`. For example:
+
+```console
+cat animals.txt namesofcities.txt > collection.txt 2>> errors-log.txt
+```
+
+
+> Note: when combining standard output and standard error, standard output comes first. 
 
 
 
