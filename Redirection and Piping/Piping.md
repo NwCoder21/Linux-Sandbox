@@ -25,7 +25,53 @@ In the above example, we are looking at the long list of executables on the syst
 
 ![image](https://user-images.githubusercontent.com/107522496/198059326-f7637aef-9d69-435a-9051-e20c24ade619.png)
 
+ ---
  
+ # Difference Between Piping and Redirection
+ 
+ * `>`/ redirection: connects the output of a command to a file, in other words, redirecting standard input/output/error. For example, redirecting standard output to a file instead of to the terminal. 
+   
+ * `|`/piping: connects a command to another command, in other word, sends the output of one command to the input of another command. 
+
+---
+
+Redirection and piping can be combined together, but they are not the same .   
+
+![image](https://user-images.githubusercontent.com/107522496/198067941-d1e74b0e-7dd5-4c5c-8144-b49c11838de7.png)
+
+In the above example, we are combining two commands together using a pipe, and then sending the combination of the two commands to a new file named sortedExe.txt. This is an exampple of using pipeing and redirection together. 
+
+---
+
+# `tr`- translate 
+
+![image](https://user-images.githubusercontent.com/107522496/198072900-ee1ed4a9-ddec-4c93-b7bf-02fb66dc4e4b.png)
+
+`tr`requires that data is provide dto it via standard in. In the above example, we are using multiple pipes to have only the number remain for each line. Using `tr`, we are doing the following:
+
+* `| tr -d [:alpha:]`: is taking the output of `cat contact.txt` and removing alphabetical characters
+* ` | tr -d : `: is removing the colon 
+* `| tr -d [:blank:]`: is removing the space 
+* `>`: this is then redirecting the output to a file 
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
