@@ -116,16 +116,43 @@ Standard input and standard output can also be redirected at the same time.
 
 ![image](https://user-images.githubusercontent.com/107522496/197976654-5883bb58-5e4a-4c48-9fc3-28aca54bca60.png)
 
-In the above example, we are using `cat` to read in (standard input) the contents of the namesofcities.txt file and then redirecting the output (standard output) to the greeting.txt file. 
+In the above example, we are using `cat` to read (standard input) the contents of the namesofcities.txt file and, instead of outputting the contents to the terminal, it redirects the output (standard output) to the greeting.txt file. 
 
+> Remember: use the `<` symbol to redirect standard in and the `>` symbol to redirect standard ouput
 
+In this example, becuase we have used the `>` symbol, the contents of greeting.txt are being replaced and overwritten by the data which is in namesofcities.txt.
 
-> Remember: use the `<` symbol to redirect standard in and the `>` symbolto redirect standard ouput
+---
 
+# Appending Data when Commbining the Redirection of Standard Input and Standard Output
 
+To append data to a file when combining standard input and standard output, the `>>` can be used. For example, 
 
+![image](https://user-images.githubusercontent.com/107522496/197985142-9a1dd2ea-5dba-4b16-9f98-574fc0afa1e6.png)
 
+Here, the contents of namesofcities.txt are being sent into `cat`, which then sends (redirects) these contents to the end of the greeting.txt file. The orginal contents of greeting.txt remain and the data of namesofcities.txt is appended to the end. 
 
+---
+
+We can also combine Standard input and standard output to crete a new file. For example: 
+ 
+![image](https://user-images.githubusercontent.com/107522496/197983326-85560532-4cc8-4594-9257-f08b122b15fa.png)
+
+Here, the new-list.txt file does not exist, however, by redirecting the output to a file names new-list.txt, the system creates this file and sends the contents of standard input (in this case, the contents of namesofcities.txt) to new-list.txt.
+
+---
+
+#### Another Example 
+
+![image](https://user-images.githubusercontent.com/107522496/197988384-f541f5a1-e97d-4ce2-97a7-60b377a1ed91.png)
+
+In this example, the data from the numbers.txt is being sent into the `sort` command, and instead of sorting the data and outputting it onto the screen, instead, it is redirecting that **sorted** data into a file named sorted-numbers.txt. 
+
+---
+
+# Redirecting Standard Error 
+
+By default, errors are outputted to the terminal. For example: 
 
 
 
