@@ -154,10 +154,53 @@ In this example, the data from the numbers.txt is being sent into the `sort` com
 
 By default, errors are outputted to the terminal. For example: 
 
+![image](https://user-images.githubusercontent.com/107522496/197989637-a58935eb-0d5e-422c-b49e-57d47f3326c0.png)
+
+Firstly, there is no command "echoo" so an error is sent to the terminal. Seoondly, because there the file "abcde" does not exist, the terminal is unable to read from it and throws an error to the terminal window. 
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/197995296-5b973959-c330-479a-a015-4479dc90294e.png)
+
+In the above example, even though we are redirecting standard output, the reason why the error shows up on the terminal is because errors are treated differently to output. 
+
+This means errors are, by default, sent to the terminal. However, the errors can be redirected.
+
+Just the way we use `<` to redirect standard input, and use `>` and `>>` to redirect standard output, we use the `2>` operator to redirect errors somewhere else.
+
+![image](https://user-images.githubusercontent.com/107522496/197992396-f059d535-dce6-4473-8e2c-742c9f6a6340.png)
+
+Here, instead of outputting the error to the terminal, the error is being sent to the errors-log.txt file. 
+
+---
+
+
+ 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
