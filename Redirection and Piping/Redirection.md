@@ -1,18 +1,18 @@
 # Redirection 
 
-Normally, a command is run in the command line and its result is outputted to the terminal. However, there are ways we can *redirect* this output to somewhere else, such as another file, program, device, or even another command. This allows us to **chain** commands together in a **pipline**.   
+Normally, a command is run in the command line and its result is outputted to the terminal. However, there are ways we can *redirect* this output to somewhere else, such as another file, program, device, or even another command. This allows us to **chain** commands together in a **pipeline**.   
 
-There are three types of communication streams between a computer program and its enviroment 
+There are three types of communication streams between a computer program and its environment 
 
 * `Standard Input` (`stdin`): this is information inputted into the terminal by using a keyboard or another input device 
 * `Standard Output` (`stdout`): this is information outputted once a command has been run
-* `Standard Error` (`stderr`): this is an error message which is outputted when a falied process or incorrect command is run 
+* `Standard Error` (`stderr`): this is an error message which is outputted when a failed process or incorrect command is run 
 
 ---
 
 # Redirecting Standard Output
 
-When talking about redirecting standard output and standard error, it means redirecting them do a different output detination other than the default destination, for example, to another command or file. 
+When talking about redirecting standard output and standard error, it means redirecting them do a different output destination other than the default destination, for example, to another command or file. 
 
 > The default destination for standard output and standard error is the terminal. 
 
@@ -35,7 +35,7 @@ In the above example, `Hello World!!` would be redirected to the `greeting.txt` 
 
 # `>`
 
-This `>` symbol is used to redirect standard output. It  takes the takes the standard output of the command to its left, and redirects it to the file to its right. 
+This `>` symbol is used to redirect standard output. It takes the takes the standard output of the command to its left and redirects it to the file to its right. 
 
 > IMPORTANT!!: `>` completely overwrites (erases and replaces) the contents of a file. For example:
 
@@ -47,7 +47,7 @@ This `>` symbol is used to redirect standard output. It  takes the takes the sta
 
 ![image](https://user-images.githubusercontent.com/107522496/197794301-d42907de-cb86-40fe-932f-e6af0a53a734.png)
 
-In the above example, when typing the `ls` command, by default, the output is sent to the terminal and dispalyed. However, by using the `>` symbol, we can redirect this output to a file (in this case, files.txt). Hence, nothing will be displayed on the terminal. We can check if redirection has work by using the `cat` command with files.txt as its argument. 
+In the above example, when typing the `ls` command, by default, the output is sent to the terminal and displayed. However, by using the `>` symbol, we can redirect this output to a file (in this case, files.txt). Hence, nothing will be displayed on the terminal. We can check if redirection has work by using the `cat` command with files.txt as its argument. 
 
 ---
 
@@ -55,7 +55,7 @@ In the above example, when typing the `ls` command, by default, the output is se
 
 In the above example, we are taking the contents of the `cities.txt` file and sending it (redirecting it) to the `namesofcities.txt` file. Because we have redirected the output to a file, we won't see the output on the terminal.
 
-We can confirm that indeed this redirect has been successful by using the `cat`command on the new file:
+We can confirm that indeed this redirect has been successful by using the `cat` command on the new file:
 
 ![image](https://user-images.githubusercontent.com/107522496/197764218-9795681f-5dd4-4f9b-8b40-10abf4f32077.png)
 
@@ -64,12 +64,12 @@ We can confirm that indeed this redirect has been successful by using the `cat`c
 
 # `>>`
 
-When redirecting, tThe `>>` symbol allows to add text to end of a file without losing the original text.
+When redirecting, the `>>` symbol allows to add text to end of a file without losing the original text.
 
 ![image](https://user-images.githubusercontent.com/107522496/197770528-570fe7d1-6efc-4e12-960e-a090cb67f7d2.png)
 
 
-Here, the contents of `animals.txt` have been sent (**appended**)) to the end of the contents of `greeting.txt`. The orginal text of `greeting.txt` remains. 
+Here, the contents of `animals.txt` have been sent (**appended**)) to the end of the contents of `greeting.txt`. The original text of `greeting.txt` remains. 
 
 
 ---
@@ -118,27 +118,27 @@ Standard input and standard output can also be redirected at the same time.
 
 In the above example, we are using `cat` to read (standard input) the contents of the namesofcities.txt file and, instead of outputting the contents to the terminal, it redirects the output (standard output) to the greeting.txt file. 
 
-> Remember: use the `<` symbol to redirect standard in and the `>` symbol to redirect standard ouput
+> Remember: use the `<` symbol to redirect standard in and the `>` symbol to redirect standard output.
 
-In this example, becuase we have used the `>` symbol, the contents of greeting.txt are being replaced and overwritten by the data which is in namesofcities.txt.
+In this example, because we have used the `>` symbol, the contents of greeting.txt are being replaced and overwritten by the data which is in namesofcities.txt.
 
 ---
 
-# Appending Data when Commbining the Redirection of Standard Input and Standard Output - `>>`
+# Appending Data when Combining the Redirection of Standard Input and Standard Output - `>>`
 
 To append data to a file when combining standard input and standard output, the `>>` can be used. For example, 
 
 ![image](https://user-images.githubusercontent.com/107522496/197985142-9a1dd2ea-5dba-4b16-9f98-574fc0afa1e6.png)
 
-Here, the contents of namesofcities.txt are being sent into `cat`, which then sends (redirects) these contents to the end of the greeting.txt file. The orginal contents of greeting.txt remain and the data of namesofcities.txt is appended to the end. 
+Here, the contents of namesofcities.txt are being sent into `cat`, which then sends (redirects) these contents to the end of the greeting.txt file. The original contents of greeting.txt remain and the data of namesofcities.txt is appended to the end. 
 
 ---
 
-We can also combine Standard input and standard output to crete a new file. For example: 
+We can also combine Standard input and standard output to create a new file. For example: 
  
 ![image](https://user-images.githubusercontent.com/107522496/197983326-85560532-4cc8-4594-9257-f08b122b15fa.png)
 
-Here, the new-list.txt file does not exist, however, by redirecting the output to a file names new-list.txt, the system creates this file and sends the contents of standard input (in this case, the contents of namesofcities.txt) to new-list.txt.
+Here, the new-list.txt file does not exist, however, by redirecting the output to a file named new-list.txt, the system creates this file and sends the contents of standard input (in this case, the contents of namesofcities.txt) to new-list.txt.
 
 ---
 
@@ -156,7 +156,7 @@ By default, errors are outputted to the terminal. For example:
 
 ![image](https://user-images.githubusercontent.com/107522496/197989637-a58935eb-0d5e-422c-b49e-57d47f3326c0.png)
 
-Firstly, there is no command "echoo" so an error is sent to the terminal. Seoondly, because there the file "abcde" does not exist, the terminal is unable to read from it and throws an error to the terminal window. 
+Firstly, there is no command "echoo" so an error is sent to the terminal. Secondly, because there the file "abcde" does not exist, the terminal is unable to read from it and throws an error to the terminal window. 
 
 ---
 
@@ -174,7 +174,7 @@ Just the way we use `<` to redirect standard input, and use `>` and `>>` to redi
 
 Here, instead of outputting the error to the terminal, the error is being sent to the errors-log.txt file. 
 
-> Note: The reason why we may redirect errors is so to keep a log of them in a seperate file.
+> Note: The reason why we may redirect errors is so to keep a log of them in a separate file.
 
 ---
 
@@ -184,7 +184,7 @@ To append data to an error log for example, the `2>>` symbol is used. For exampl
 
 ![image](https://user-images.githubusercontent.com/107522496/197999459-2974367f-28e2-4c51-9fb1-84a633e63777.png)
 
-So, this is how we redirect standard error. Either redirecting it to a file or appendinng it to a file. 
+So, this is how we redirect standard error. Either redirecting it to a file or appending it to a file. 
 
 ---
 
@@ -196,7 +196,7 @@ Can redirect standard out and standard error at the same time. For example:
  
 ![image](https://user-images.githubusercontent.com/107522496/198004261-38e3aa01-3ff1-45fe-8def-456b1a4d661d.png)
 
-Here, we are taking the contents of two files, animals.txt and namesofcities.txt and redirecting (using `>`) it to a new file called collection.txt. If an error occurs when running this commmand, the error will be redirected (using `2>`) to a file named errors-log.txt.
+Here, we are taking the contents of two files, animals.txt and namesofcities.txt and redirecting (using `>`) it to a new file called collection.txt. If an error occurs when running this command, the error will be redirected (using `2>`) to a file named errors-log.txt.
 
 If the errors-log.txt file has already data in it and we don't want that data overwritten, we should use the `2>>`. For example:
 
@@ -207,9 +207,9 @@ cat animals.txt namesofcities.txt > collection.txt 2>> errors-log.txt
 
 ---
 
-# Redirecting Standard Ouput and Standard Error to the Same File - `2>&1`
+# Redirecting Standard Output and Standard Error to the Same File - `2>&1`
 
-To Redirect standard ouput and standard error to the same file, we can either use:
+To Redirect standard output and standard error to the same file, we can either use:
 
 ### Method 1
 
@@ -228,9 +228,9 @@ The `2>&1` means redirect standard error to the same destination where standard 
 
 ---
 
-# Newer Version of Redirecting Standard Ouput and Standard Error to the Same File - `&>`
+# Newer Version of Redirecting Standard Output and Standard Error to the Same File - `&>`
 
-Newer versions of bash support the `&>` redirecting standard ouput and standard error to the same file. 
+Newer versions of bash support the `&>` redirecting standard output and standard error to the same file. 
 
 ```console
 cat namesofcities.txt &> collection.txt 
