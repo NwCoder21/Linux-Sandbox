@@ -324,8 +324,19 @@ Copies files or directories. Here, we copy the file linux_commands.txt and place
 $ cp linux_commands.txt Documents/
 ```
 
-
 ---
+
+##  **`cat`** 
+
+reads the file provided and outputs it, by default, to the command line terminal.
+
+![image](https://user-images.githubusercontent.com/107522496/198153793-8b327b85-1907-4250-b12c-f235ea2174e6.png)
+
+```yaml 
+$ cat <file_name> 
+```
+Can also use the `-n` with cat to display the line number of each line too. See the above screenshot for an example of this. 
+
 * 
 
 
