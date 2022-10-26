@@ -103,18 +103,24 @@ To redirect the contents of a file to standard input, use the `<` symbol.
  ```console
 cat animals.txt
 ```
- In the above command, we aare passing `animals.txt` as an command line argument, to the command `cat` 
+ In the above command, we are passing `animals.txt` as an command line argument, to the command `cat`.
  
  ```console
 cat < animals.txt
 ```
 In the above line, we are passing the contents of `animals.txt` to `cat` via standard input. 
 
+# Redirecting Standard Input and Standard Output
+
+Standard input and standard output can also be redirected at the same time.  
+
+![image](https://user-images.githubusercontent.com/107522496/197976654-5883bb58-5e4a-4c48-9fc3-28aca54bca60.png)
+
+In the above example, we are using `cat` to read in (standard input) the contents of the namesofcities.txt file and then redirecting the output (standard output) to the greeting.txt file. 
 
 
 
-
-
+> Remember: use the `<` symbol to redirect standard in and the `>` symbolto redirect standard ouput
 
 
 
