@@ -54,9 +54,18 @@ In the above example, we are combining two commands together using a pipe, and t
 * `| tr -d [:blank:]`: is removing the space 
 * `>`: this is then redirecting the output to a file 
 
+> The above is an example of using multiple pipes together.   
 ---
 
-# Multiple Pipes - To be Continued 
+# Another Example of Using Multiple Pipes 
+
+If we wanted to display the five largest files in the current directory, we could use several pipes to achieve this. we could use the `ls`, `sort`, and `head` commands. For example, 
+
+![image](https://user-images.githubusercontent.com/107522496/198230663-41270d4e-0315-4fb7-82dd-cd90c8a2429d.png)
+
+* `ls -lh`: outputs the files in the current directory in long format (`-l` option) and it displays the files' sizes in human readable format (`-h` option). 
+* `sort -rhk 5`: this command sorts the output of `ls -lh` according to the fifth column (`-k 5` option), into reverse order (`-r` option) i.e. from largest to smallest, displays the the files' sizes in human readable format (`-h` option)
+* `head -5`: this command takes the output from `sort -rhk 5` and displays the first five results.
 
 
 
