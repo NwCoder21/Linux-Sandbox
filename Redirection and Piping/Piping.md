@@ -2,7 +2,7 @@
 
 This is where we can see why a command being able to accept standard input is important as it is used with piping.
 
-Normally, commands are run one at a time. However, by using piping, we can run multiple commands in one go. The `|` symbol is used to separate two commands. The output of the command on the left of the `|`is passed onto the command to the right of the `|`. For example;
+Normally, commands are run one at a time. However, by using piping, we can run multiple commands in one go. The `|` symbol is used to separate two commands. The output of the command on the left of the `|`is passed into the command to the right of the `|`. For example;
 
 ```yaml
 $ command 1 | command 2
