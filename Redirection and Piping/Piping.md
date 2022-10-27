@@ -4,7 +4,7 @@ This is where we can see why a command being able to accept standard input is im
 
 Normally, commands are run one at a time. However, by using piping, we can run multiple commands in one go. The `|` symbol is used to separate two commands. The output of the command on the left of the `|`is passed onto the command to the right of the `|`. For example;
 
-```console
+```yaml
 $ command 1 | command 2
 ```
 Here, command 1 will run and the output of command 1 will be passed command 2.
@@ -87,7 +87,7 @@ If we want to send the output of a pipe to not only the terminal but also a file
 
 However, the reason why:
 
-```console
+```yaml
 $ cat animals.txt namesofcities.txt > animalsandcities.txt | wc -w
 ```
 won't work is the pipecharacter, `|`, needs standard output. This is because `|` takes standard output and pipes it to the standard input of the next command, but the issue with the above example is that the standard output of cat animals.txt namesofcities.txt > animalsandcities.txt has already been sent to the animalsandcities.txt file, therefore, there is nothing to be piped to the word count command. 
@@ -100,7 +100,7 @@ the file just contains the word count and not the actual contents of both files.
 
 To resolve this issue, and be able to send output to a file aswell as the terminal, we can use the `tee` command. `tee` reads standard input and copies it to both, standard ouput and a file. 
 
-```console
+```yaml
 $ cat animals.txt namesofcities.txt | tee animalsandcities.txt | wc -w 
 ```
 `tee` passes the output from the command/s before it to a file and also the next pipe after it. 
