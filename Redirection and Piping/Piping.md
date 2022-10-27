@@ -112,7 +112,7 @@ $ cat animals.txt namesofcities.txt | tee animalsandcities.txt | wc -w
 
 To summarise:
 
-```console
+```yaml
 $ command 1 | tee <file> | command 2 
 ```
 `tee` takes standard input and copies it to a file and standard output. In this example, it will: 
@@ -123,7 +123,16 @@ $ command 1 | tee <file> | command 2
  
  The benefit of using `tee` is that it allows us the flexibility to take information in the middle of a pipeline and save it to a file without interrupting the flow. 
  
- 
+ ![image](https://user-images.githubusercontent.com/107522496/198262535-e49a59bb-f911-4d19-a161-fa81097f5007.png)
+
+Here: 
+```yaml
+ls -lh | sort -rhk 5 | tee sortedFiles.txt | head -5 
+```
+
+* The `tee` is taking the output of `ls -lh | sort -rhk 5 |` and sending this output to the file provided, sortedfiles.txt
+* the `tee` then sends the output of `ls -lh | sort -rhk 5 |` to the next pipe, which is `| head -5` which displays the first 5 lines of the output of `ls -lh | sort -rhk 5 |`
+
 
 
 
