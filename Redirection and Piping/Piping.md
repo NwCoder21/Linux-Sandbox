@@ -81,16 +81,49 @@ Another way of acheieving the same result would be to use the `du` command:
 
 # The `tee` Command
 
+If we want to send the output of a pipe to not only the terminal but also a file too, we use the `tee` command. For example, if there are two files, and we want to concatenate them, and not only send this output to a file, but also to another command, such as word count to see how many words this new file contains. 
 
+![image](https://user-images.githubusercontent.com/107522496/198244890-e56807c0-0ac9-4ee0-93a4-eb82e728f859.png)
 
+However, the reason why:
 
+```console
+$ cat animals.txt namesofcities.txt > animalsandcities.txt | wc -w
+```
+won't work is the pipecharacter, `|`, needs standard output. This is because `|` takes standard output and pipes it to the standard input of the next command, but the issue with the above example is that the standard output of cat animals.txt namesofcities.txt > animalsandcities.txt has already been sent to the animalsandcities.txt file, therefore, there is nothing to be piped to the word count command. 
 
+Likewise, in the following example:
 
+![image](https://user-images.githubusercontent.com/107522496/198247026-de7edb6e-fe4d-48b8-a23b-304b64583232.png)
 
+the file just contains the word count and not the actual contents of both files. This is because, in the above example, we are taking the standard out of the `| wc -w` and redirecting it to the animalsandcities.txt file. 
 
+To resolve this issue, and be able to send output to a file aswell as the terminal, we can use the `tee` command. `tee` reads standard input and copies it to both, standard ouput and a file. 
 
+```console
+$ cat animals.txt namesofcities.txt | tee animalsandcities.txt | wc -w 
+```
+`tee` passes the output from the command/s before it to a file and also the next pipe after it. 
 
+* `tee` takes the output from `cat animals.txt namesofcities.txt` and sends it to the file `animalsandcities.txt`
+* `tee` then also sends the output from `cat animals.txt namesofcities.txt` to the next command (`| wc -w` part of the command) 
 
+![image](https://user-images.githubusercontent.com/107522496/198252865-e28a1b37-a2f0-4a38-af6e-b7201d05c23d.png)
+
+To summarise:
+
+```console
+$ command 1 | tee <file> | command 2 
+```
+`tee` takes standard input and copies it to a file and standard output. In this example, it will: 
+
+* Take the information coming from `command 1`
+* Save it to the `<file>`
+* And then pass, that information coming from `command 1`, to `command 2`
+ 
+ The benefit of using `tee` is that it allows us the flexibility to take information in the middle of a pipeline and save it to a file without interrupting the flow. 
+ 
+ 
 
 
 
