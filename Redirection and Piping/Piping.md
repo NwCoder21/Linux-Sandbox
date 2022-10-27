@@ -67,6 +67,21 @@ If we wanted to display the five largest files in the current directory, we coul
 * `sort -rhk 5`: this command sorts the output of `ls -lh` according to the fifth column (`-k 5` option), into reverse order (`-r` option) i.e. from largest to smallest, displays the the files' sizes in human readable format (`-h` option)
 * `head -5`: this command takes the output from `sort -rhk 5` and displays the first five results.
 
+We could then send this output to a file instead of to the terminal. To do this, `> <filename> ` can be used. For example:
+
+![image](https://user-images.githubusercontent.com/107522496/198234128-9d7746ca-1c2c-4579-bb64-85523cd60113.png)
+
+### Using the `du` command to achieve this too 
+
+Another way of acheieving the same result would be to use the `du` command:
+
+![image](https://user-images.githubusercontent.com/107522496/198236346-46619982-ce44-4c8b-b6b1-54995a3121f7.png)
+
+---
+
+# The `tee` Command
+
+
 
 
 
