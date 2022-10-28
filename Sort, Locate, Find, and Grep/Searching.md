@@ -151,19 +151,44 @@ $ find -name "*[0-9]*"
 ```
 ![image](https://user-images.githubusercontent.com/107522496/198565403-e2e9a353-d549-4a64-91ad-cb9bebc30f90.png)
 
+---
 
+# `-size` - Finding by Size 
 
+The `-size` option can be used with the `find` commmand to find files of a specfic size.
 
+```yaml
+$ find -size +200k
+```
+* `-` symbol is used to search for files which are **under** a specific size. For example, `-2M` means files under 2 megabytes 
+* `+` symbol is used to search for files which are **over** a specific size. For example, `+500k` means files over 2 kilobytes 
 
+![image](https://user-images.githubusercontent.com/107522496/198569042-411d5e1d-d2ef-4833-9c15-8d652bb001aa.png)
 
+> Note: when using this option, the results do not display the exact size of the file
 
+# `-user` - Finding by Owner
 
+The `-user` option outputs files and directories which are owned by the name provided
 
+```yaml
+$ find -user joe
+```
+---
 
+# `-empty` - Searching for Empty Files and Directories 
 
+When `find` is used with the `-empty` option, it will search for empty files or directories 
 
+![image](https://user-images.githubusercontent.com/107522496/198569958-4a020be5-76f6-4634-990c-033ef5ae280b.png)
 
+In this above example, `find -empty -type d` searches for any empty directories.
 
+To search for empty files, we can use : 
+
+```yaml
+$ find -empty -type f
+```
 
 
 
