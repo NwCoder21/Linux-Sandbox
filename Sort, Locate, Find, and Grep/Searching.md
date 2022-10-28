@@ -189,6 +189,11 @@ To search for empty files, we can use :
 ```yaml
 $ find -empty -type f
 ```
+--- 
+
+# Finding by Time
+
+To have a look how timestamps work and the different types, click [here](https://github.com/NwCoder21/Linux-Sandbox/blob/main/Sort%2C%20Locate%2C%20Find%2C%20and%20Grep/Timestamps.md)
 
 
 
