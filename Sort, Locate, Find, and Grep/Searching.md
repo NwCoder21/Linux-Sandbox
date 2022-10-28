@@ -195,15 +195,35 @@ $ find -empty -type f
 
 To have a look how timestamps work and the different types, click [here](https://github.com/NwCoder21/Linux-Sandbox/blob/main/Sort%2C%20Locate%2C%20Find%2C%20and%20Grep/Timestamps.md)
 
+### To find files according to the time in minutes, we use:
 
+* -mmin: this searches for files depending on the time they were modified (in minutes). For example:
+ * `find -mmin +30` - this will look for files which have been modified **more than** 30 minutes ago 
+ *  * `find -mmin -30` - this will look for files which have been modified **less than** 30 minutes ago 
 
+* `-cmin`: this searches for files depending on the time they were changed (in minutes). For example:
+  * `find -cmin +30` - this will look for files which have been changed **more than** 30 minutes ago 
+ * `find -cmin -30` - this will look for files which have been changed **less than** 30 minutes ago
 
+* `-amin`: this searches for files depending on the time they were accessed (in minutes). For example:
+  * `find -amin +15` - this will look for files which have been accessed **more than** 15 minutes ago 
+ * `find -amin -45` - this will look for files which have been accessed **less than** 45 minutes ago
 
+### To find files according to the time in days, we use:
 
+* -mtime: this searches for files depending on the time they were modified (in days). For example:
+ * `find -mtime +3` - this will look for files which have been modified **more than** 3 days ago 
+ *  * `find -mtime -4` - this will look for files which have been modified **less than** 4 days ago 
 
+* `-ctime`: this searches for files depending on the time they were changed (in days). For example:
+  * `find -ctime +7` - this will look for files which have been changed **more than** 7 days ago 
+ * `find -ctime -5` - this will look for files which have been changed **less than** 5 days ago
 
+* `-atime`: this searches for files depending on the time they were accessed (in days). For example:
+  * `find -atime +15` - this will look for files which have been accessed **more than** 15 days ago 
+ * `find -atime -2` - this will look for files which have been accessed **less than** 2 days ago
 
-
+> Note: when dealing with days, it means 24 hour blocks
 
 
 
