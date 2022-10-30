@@ -1,0 +1,43 @@
+#!/bin/bash
+
+count=0
+
+echo "Hello, please select one of the following options to run the corresponding script."
+
+# Declaring array which will be used to store the scripts
+
+declare -a filesarray
+
+# for loop to iterate over the scripts avaiable in the directory 
+ 
+for script in ./*
+do
+        filesarray[$count]="$script"
+        ((count++))
+done
+
+#read choice
+arraylen=${#filesarray[@]}
+arraylenminusone=$(( ${#filesarray[@]} - 1 ))
+
+counter=0
+
+for (( i=0; i<${arraylen}; i++ ));
+do
+        echo "Press $counter to run ${filesarray[$i]}"
+        ((counter++))
+done
+read choice
+
+# this while loop user enters a valid number
+
+while [ $choice -lt 0 ] || [ $choice -gt $arraylenminusone ]
+do
+        echo "Please enter a number between 0 and $arraylen"
+        read choice
+done
+
+${filesarray[choice]}
+
+exit
+
