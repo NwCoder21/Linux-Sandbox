@@ -225,10 +225,33 @@ To have a look how timestamps work and the different types, click [here](https:/
 
 > Note: when dealing with days, it means 24 hour blocks
 
+--- 
 
+# Using Logical Operators to Search
+ 
+Can also use `-and`, `or`, and `-not` operators to search for things in the system.
 
+### `-not`: this negates whatever comes after it. For example:
 
+![image](https://user-images.githubusercontent.com/107522496/199472271-cdc218db-9093-4b06-acaa-60234a030be0.png)
 
+this looks for all files which do not have the .txt extension.
+
+![image](https://user-images.githubusercontent.com/107522496/199473626-ba690a08-2b43-4834-8b25-453f79936432.png)
+
+Here, `find -cmin -5 -not "*.log"` means find any files changed within the past five minutes AND which has not got the `.log` name. The AND operator is implied, do not have to specifically write `-and` 
+
+> Note: instead of using `-not`, can use `!` in its place, for example: 
+
+![image](https://user-images.githubusercontent.com/107522496/199474996-819d29bc-d69d-4f72-879e-2cf7b0320941.png)
+
+### `-or`
+
+The `-or` operator works when either one of the conditions is true.
+
+![image](https://user-images.githubusercontent.com/107522496/199475739-e1f0fe77-f4d3-49e2-a4a1-9261e98325a2.png)
+
+Here, are looking for file which have either "man" or "pea" in their name. 
 
 
 
