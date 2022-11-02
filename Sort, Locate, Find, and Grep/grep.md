@@ -22,7 +22,6 @@ In the above example, the `grep` command searches for the pattern london in the 
 ```yaml
 $ grep -i "london" nameofcities.txt
 ```
-
 ---
 
 # The `-w` option  
