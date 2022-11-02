@@ -49,9 +49,24 @@ Can also provide the `grep` command a directory to search in if don't want to se
 
 ![image](https://user-images.githubusercontent.com/107522496/199534578-bf41f5a0-a2d8-4923-9cc2-19851959bc33.png)
 
+--- 
+# `-c` 
 
+The `-c` option displays how  many matches have been found. 
 
+![image](https://user-images.githubusercontent.com/107522496/199536906-8b1b972f-35ce-474d-8f06-2c630c8f82a8.png)
 
+Here, the exact pattern of "tree" is situated in six locations within the shortstory.txt file. 
+
+---
+
+# Using `-A` and `-B` to display context.
+
+To display a certain amount of lines before or after a result, we can use the `-A` and `-B` options. 
+
+![image](https://user-images.githubusercontent.com/107522496/199538274-fa06cf8e-39a1-477e-b988-7727590e668f.png)
+
+The above example displays all results matching the pattern "tree" and one line before them
 
 
 
