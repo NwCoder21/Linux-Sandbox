@@ -43,7 +43,7 @@ The `$` symbol returns lines ending with the provided letter/pattern.
 
 # [abcde] 
 
-When using `[]` with a set of characters, returns patterns which include each of the character set provided within the `[]` 
+When using `[]` with a set of characters, it returns patterns which include each of the characters within the set providedcontained in the `[]`. 
 
 
 ![image](https://user-images.githubusercontent.com/107522496/199698521-c084badd-0e59-4ca6-b4e3-e104d1d73128.png)
