@@ -102,7 +102,15 @@ For example, `grep "?" shortstory.txt -n` will search for the `?` character in t
 
  ![image](https://user-images.githubusercontent.com/107522496/199730851-b6e24f57-6402-4688-bc5c-fcdaecde1604.png)
 
+ However, when using the `-E` option, it means something else.
  
+ `grep "trees?" shortstory.txt -E` means that find the word "tree" and the word "trees". The letter before the `?`, in this case a "s", is optional. 
+ 
+ ![image](https://user-images.githubusercontent.com/107522496/199732852-077956f2-63b1-4f02-8555-75e84cc68fa5.png)
+
+
+
+
  
  
  
