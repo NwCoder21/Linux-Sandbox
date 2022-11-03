@@ -120,9 +120,16 @@ Here, it will look for a three letter combination from the set provided within t
 
 Can also use a range within the `{}`
 
-![image](https://user-images.githubusercontent.com/107522496/199740859-f2cf05d1-7bfc-43c9-b200-cb1792171491.png)
+![image](https://user-images.githubusercontent.com/107522496/199741626-3385fa05-3c06-4d11-9d93-77dfdec0bd00.png)
 
-Here, it searches for any combination from the set of "aeiou" which are either two, three, or four in length.   
+Here, it searches for any combination from the set of "aeiou" which are either two, three, or four in length.
+
+An example of four in length has been highlighted in yellow. 
+
+---
+
+
+
 
 
 
