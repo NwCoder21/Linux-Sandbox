@@ -1,6 +1,17 @@
 # Using Regular Expressions with `grep`
 
-There are several regular expressions which can be used with `grep`
+There are several regular expressions which can be used with `grep`.
+
+*  `.` this matches any single character 
+*  `^` this mathces to the start of a line 
+*  `$` this matches to the end of a line
+*  `[abcde]` this matches character in the set provided 
+*  `[^abcde]` this matches characters not in the set provided 
+*  `[A-Z]` this matches the characters in the provided range 
+*  `*` repeat previous expression 0 or more times
+*  `\` escape 
+
+---
 
 # `.`
 
@@ -45,9 +56,37 @@ The `$` symbol returns lines ending with the provided letter/pattern.
 
 When using `[]` with a set of characters, it returns patterns which include each of the characters within the set providedcontained in the `[]`. 
 
-
-![image](https://user-images.githubusercontent.com/107522496/199698521-c084badd-0e59-4ca6-b4e3-e104d1d73128.png)
+![image](https://user-images.githubusercontent.com/107522496/199705445-b80d5b5a-db3f-454f-9793-f0140d67b1f2.png)
 
 In the above example, it searches for words which begin with a "w" and have either an "o" or "e" after the "w".
 
-Can also use `[]` to output a range of numbers
+Another example is if we were looking for a word which begins with the letter "t" and has one of the following letters after it:
+
+"aaeiou"
+
+![image](https://user-images.githubusercontent.com/107522496/199712101-9a76ce8a-f958-4e7e-a392-76049a2bff81.png)
+
+---
+
+The below example is looking for words which begin with the letter "t" and Do NOT have either one of the following letters after it:
+
+"aaeiou"
+
+![image](https://user-images.githubusercontent.com/107522496/199712317-b135a58d-f8ee-44b3-98e3-3a3f7375103f.png)
+
+---
+
+Can also use `[]` to output a range of numbers:
+
+![image](https://user-images.githubusercontent.com/107522496/199705539-40719142-b1d9-44fb-81f9-2a318cfd6c74.png)
+
+---
+
+# `[^]`
+
+when using the `^` with `[]`, it returns the characters which are not within the provided set. For example:
+
+![image](https://user-images.githubusercontent.com/107522496/199706212-4bcd783a-6b14-4f10-823b-99bf52c810f5.png)
+
+
+
