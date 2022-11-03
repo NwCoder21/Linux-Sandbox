@@ -60,7 +60,7 @@ Here, the exact pattern of "tree" is situated in six locations within the shorts
 
 ---
 
-# Using `-A` and `-B` to display context.
+# Using `-A` and `-B` to display context
 
 To display a certain amount of lines before or after a result, we can use the `-A` and `-B` options. 
 
@@ -68,13 +68,51 @@ To display a certain amount of lines before or after a result, we can use the `-
 
 The above example displays all results matching the pattern "tree" and one line before them
 
+---
 
+In the below example, the `-A2` has een used to display the matching results and two lines after them too. 
 
+![image](https://user-images.githubusercontent.com/107522496/199677962-7e8f5126-3b5f-49c4-9e7e-51c16b90aa37.png)
+ 
+ ---
+# Using the `-C` option with `grep`
+ 
+`-A` is used to display a certain amount of numbers after a match and `-B` is used to display a certain amount if lines after a match. However, we can use the `-C`. This allows to display a certain amount of numbers before and after a match. So, instead of doing:
 
+```yaml
+$ grep "tree" shortstory.txt -A1 -B1
+```
+we can do the following: 
 
+![image](https://user-images.githubusercontent.com/107522496/199680555-6f43bd2a-e1a9-44fd-a4d6-98cb9dd0d8b2.png)
 
+This displays the the line the match is foud on and also one line before and after the match result.
 
+---
 
+#  Using the `-n` option with `grep` to display the line numbers 
 
+The `-n`  display the line numbers.
+
+![image](https://user-images.githubusercontent.com/107522496/199683449-9db67ddd-1d98-42d2-bca3-ec21ea85e12e.png)
+
+The reason why 
+
+```yaml
+$ grep "tree" shortstory.txt -C2n
+```
+would not work is because the `-C` would try to interpret the n as a number hence why can either put the `-n` seperate or place it before the `-C`, as has been shown in the example above.
+
+---
+
+#  Using the `-m` option with `grep` to limit the amount of matches displayed to the terminal
+
+The `-m` can be used to limit the amount of matches displayed to the terminal to a certain number. For example:
+
+![image](https://user-images.githubusercontent.com/107522496/199684813-1e783c5d-27f3-446f-93e3-2e21c09f65d0.png)
+
+will only display the first three results. 
+
+--- 
 
 
