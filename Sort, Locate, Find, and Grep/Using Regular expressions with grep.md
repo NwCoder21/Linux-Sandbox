@@ -108,6 +108,21 @@ For example, `grep "?" shortstory.txt -n` will search for the `?` character in t
  
  ![image](https://user-images.githubusercontent.com/107522496/199732852-077956f2-63b1-4f02-8555-75e84cc68fa5.png)
 
+---
+
+Another example is `{}`. without using the `-E` option, it will search for the characters `{}` 
+
+![image](https://user-images.githubusercontent.com/107522496/199733463-32b9f95e-bd02-4e2a-8be4-1b4b19375979.png)
+
+Here, it will look for a three letter combination from the set provided within the sqaure brackets (`[]`).
+
+--- 
+
+Can also use a range within the `{}`
+
+![image](https://user-images.githubusercontent.com/107522496/199740859-f2cf05d1-7bfc-43c9-b200-cb1792171491.png)
+
+Here, it searches for any combination from the set of "aeiou" which are either two, three, or four in length.   
 
 
 
