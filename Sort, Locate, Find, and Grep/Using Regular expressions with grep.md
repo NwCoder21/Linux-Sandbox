@@ -84,9 +84,28 @@ Can also use `[]` to output a range of numbers:
 
 # `[^]`
 
-when using the `^` with `[]`, it returns the characters which are not within the provided set. For example:
+When using the `^` with `[]`, it returns patterns with the characters which are not within the provided set. For example:
 
 ![image](https://user-images.githubusercontent.com/107522496/199706212-4bcd783a-6b14-4f10-823b-99bf52c810f5.png)
 
+---
+ 
+ # Using `-E` option with `grep`
+ 
+ The `-E` option can be used with `grep` to allow for extended regular expression syntax. This is the same as using `egrep`.
+ 
+ Certain meta characters have a special meaning such as `?`, `+`, `(`, `\`, `{`, `)`. However, they can be used for their intended special meaning unless they are also escaped such as `\?`, `\+`, `\(`, `\|`, `\{`, `\)`. 
+ 
+ But, if we use `grep` with the the `-E` option, they can be used for their special meaning without the `\`. 
 
+For example, `grep "?" shortstory.txt -n` will search for the `?` character in the file, such as: 
+
+ ![image](https://user-images.githubusercontent.com/107522496/199730851-b6e24f57-6402-4688-bc5c-fcdaecde1604.png)
+
+ 
+ 
+ 
+ 
+ 
+ 
 
