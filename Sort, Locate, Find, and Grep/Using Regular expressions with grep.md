@@ -128,6 +128,20 @@ An example of four in length has been highlighted in yellow.
 
 ---
 
+# Using Piping with ` grep`
+
+By piping a list of data to `grep`, it allows to filtr the data. For example, the `ps -aux` command is used to show a list of the current processes running. However, we can pipe the results to `grep` to filter down to the type of user.
+
+![image](https://user-images.githubusercontent.com/107522496/199934530-68e52c8a-679c-4d33-ae9a-5731c28b556f.png)
+
+Or if we wanted to search for the word "text" from the list of processes, we can do: 
+
+![image](https://user-images.githubusercontent.com/107522496/199935120-2671cdfc-c310-4d3a-9851-151335ed2b15.png)
+
+---
+
+ 
+
 
 
 
