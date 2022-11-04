@@ -116,3 +116,4 @@ will only display the first three results.
 --- 
 
 
+#  Using the `-l` option with `grep` to display the line numbers 
