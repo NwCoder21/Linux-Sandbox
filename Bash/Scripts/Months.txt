@@ -1,0 +1,74 @@
+#!/bin/bash
+
+
+
+# This script accepts a number between 1 and 12 as an argument 
+
+# It then returns the name of the month that corresponds to that number
+
+
+
+# The below section of code checks if a number has been provided 
+
+
+
+if [ $# -eq 0 ]
+
+then
+
+        echo "Error, please provide a number between 1 and 2."
+
+        exit 1
+
+fi
+
+
+
+
+
+# The below line sets the month equal to the argument passed in by the user 
+
+
+
+month=$1
+
+
+
+case $month in
+
+        1) echo "January" ;;
+
+        2) echo "Febuary" ;;
+
+        3) echo "March"   ;;
+
+        4) echo "April"   ;;
+
+        5) echo "May"     ;;
+
+        6) echo "June"    ;;
+
+        7) echo "July"    ;;
+
+        8) echo "August"  ;;
+
+        9) echo "September" ;;
+
+       10) echo "October"   ;;
+
+       11) echo "November"  ;;
+
+       12) echo "December"  ;;
+
+        *)
+
+                echo "error, No month matches: $month"
+
+                echo "Please pass a number between 1 and 12."
+
+                exit 2
+
+                ;;
+
+esac
+
