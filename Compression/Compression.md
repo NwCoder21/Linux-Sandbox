@@ -120,8 +120,13 @@ The advantage of using of of the two above archive commands is that, in one comm
 $ zip <archive_name>.zip <file1> <file2> ... 
 ```
 
+> Note: If your linux distribution does not have zip already installed, type in `sudo apt install zip unzip` 
 
+To unzip a archived file, use the `unzip` command:
 
+![image](https://user-images.githubusercontent.com/107522496/200820060-620adcc3-a9a8-4e7d-98c5-3a4dc94d6ff4.png)
+
+Here, we compress and archive two fils, test1.txt and test2.txt. We then move the archive file to the user directory and unzip it. 
 
 
 
