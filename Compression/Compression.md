@@ -111,6 +111,7 @@ In linux, there are two main archive commands which have the ability to compress
 The advantage of using of of the two above archive commands is that, in one command the file/s size will be reduced and packaged into a single archive file.  
 
 ---
+# `zip`
 
 ## Creating a zip file
 
@@ -136,7 +137,30 @@ Can also compress and archive directories using the `-r` optin with `zip`. For e
 
 ![image](https://user-images.githubusercontent.com/107522496/200821406-23c3d84f-63b8-407f-a8c9-6d2d7718cc90.png)
 
+---
 
+# `tar`
+
+`tar`stands for tape archive or tarball.
+
+`zip` is more popular across platforms, however, `tar` is more used for when distributing archives among Linux systems. This is because `tar` archives store Unix file attributes, retaining file permissions and other metadata. 
+
+# Syntax 
+
+To compress files using `tar` with the `-cf` option
+
+```yaml
+$ tar -cf <archive_name>.tar <file_name/s or directories>
+```
+
+And to extract files in a `.tar` archive, we use the `-xf` option
+
+```yaml
+$ tar -xf <archive_name>.tar
+```
+For example:
+
+![image](https://user-images.githubusercontent.com/107522496/200827986-7cdb1d3b-8d0e-41b4-9f59-67fd61278077.png)
 
 
 
