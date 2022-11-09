@@ -198,6 +198,9 @@ In order to extract and decompress a `.tar` archive, change the `-c` to and `-x`
 
 # Few More Examples 
 
+Using `tar` command with `bzip2` compression to create a tarball of a directory using a single command. The desired name of the compressed archive will be compressedfootballteams.tar.bz2
+
+
 
 
 
