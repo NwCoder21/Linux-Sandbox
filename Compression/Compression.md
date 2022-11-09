@@ -163,7 +163,9 @@ For example:
 
 ![image](https://user-images.githubusercontent.com/107522496/200827986-7cdb1d3b-8d0e-41b4-9f59-67fd61278077.png)
 
+--- 
 
+# Compressing `.tar` Files
 
 
 
