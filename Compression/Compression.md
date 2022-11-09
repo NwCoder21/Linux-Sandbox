@@ -179,6 +179,12 @@ However, `tar` can also be used with other options to compress along with `-cf`:
 
 The above will take the video1.mp4 and video2.mkv and commpress them and archive called `zippedvideos.tar.gz`.
 
+The reason why we combine compression and archiving utilities is because it is quicker. The longer way to achieve the above would have been:
+
+![image](https://user-images.githubusercontent.com/107522496/200861977-57518b33-0667-4f67-ba60-02450a52142f.png)
+
+
+
 ---
 
 # Decompressing & Extracting `.tar` files
