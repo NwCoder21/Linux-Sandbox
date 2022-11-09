@@ -36,7 +36,7 @@ There are several compression commands which reduce the size of files. The three
 
 # Syntax 
 
-To compress a file using one of the three above compression commmands, 
+To compress a file using one of the three above compression commands, 
 
 ```yaml
 <compression_utility> [option] <file_name> 
@@ -47,26 +47,26 @@ For example:
 $ gzip test1.txt
 ```
 
-will result in a compressed file calld test1.txt.gz AND **delete** the original file of test1.txt
+will result in a compressed file called test1.txt.gz AND **delete** the original file of test1.txt
 
 # `-k` - Retaining Original Files
 
-Using the `-k` option wiht any of the above three compression commands, compresses the file/s and also retains the original file/s.
+Using the `-k` option with any of the above three compression commands, compresses the file/s and also retains the original file/s.
 
 Using the `-k` option in the above example:
 
 ```console
 $ gzip -k test1.txt
 ```
-will create a compressed file nameed test1.txt.gz AND **retain** the original file of test1.txt.
+will create a compressed file named test1.txt.gz AND **retain** the original file of test1.txt.
 
 ![image](https://user-images.githubusercontent.com/107522496/200800918-a8b837c6-d3bd-461e-b20b-c6b3c321204b.png)
 
 --- 
 
-# Compressiing Multiple Files
+# Compressing Multiple Files
 
-Two ways to compress multiplefiles at a time:
+Two ways to compress multiple files at a time:
 
 * By adding all their names as arguments 
 
@@ -102,14 +102,14 @@ To decompress files, the `-d` option will be used.
 
 # Archiving Files 
 
-Archiving files allows to combibe mutiple files or directories into a single archived file. 
+Archiving files allows to combine multiple files or directories into a single archived file. 
 
 In linux, there are two main archive commands which have the ability to compress and archive files. They are:
 
 * `zip`
 * `tar`
 
-The advantage of using of of the two above archive commands is that, in one command the file/s size will be reduced and packaged into a single archive file.  
+The advantage of using of the two above archive commands is that, in one command the file/s size will be reduced and packaged into a single archive file.  
 
 ---
 # `zip`
@@ -128,13 +128,13 @@ To unzip a archived file, use the `unzip` command:
 
 ![image](https://user-images.githubusercontent.com/107522496/200820060-620adcc3-a9a8-4e7d-98c5-3a4dc94d6ff4.png)
 
-Here, we compress and archive two fils, test1.txt and test2.txt. We then move the archive file to the user directory and unzip it. 
+Here, we compress and archive two files, test1.txt and test2.txt. We then move the archive file to the user directory and unzip it. 
 
 ---
 
-# `zip -r` - Archiving Directroies 
+# `zip -r` - Archiving Directories 
 
-Can also compress and archive directories using the `-r` optin with `zip`. For example:
+Can also compress and archive directories using the `-r` option with `zip`. For example:
 
 ![image](https://user-images.githubusercontent.com/107522496/200821406-23c3d84f-63b8-407f-a8c9-6d2d7718cc90.png)
 
@@ -177,7 +177,7 @@ However, `tar` can also be used with other options to compress along with `-cf`:
 
 ![image](https://user-images.githubusercontent.com/107522496/200856481-a159671c-8de9-4d74-9912-ed8308ed5904.png)
 
-The above will take the video1.mp4 and video2.mkv and commpress them and archive called `zippedvideos.tar.gz`.
+The above will take the video1.mp4 and video2.mkv and compress them and archive called `zippedvideos.tar.gz`.
 
 The reason why we combine compression and archiving utilities is because it is quicker. The longer way to achieve the above would have been:
 
