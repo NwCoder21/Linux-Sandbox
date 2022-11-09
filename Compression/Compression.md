@@ -148,7 +148,7 @@ Can also compress and archive directories using the `-r` optin with `zip`. For e
 
 # Syntax 
 
-To compress files using `tar` with the `-cf` option
+Compress files using `tar` with the `-cf` option
 
 ```yaml
 $ tar -cf <archive_name>.tar <file_name/s or directories>
@@ -166,6 +166,32 @@ For example:
 --- 
 
 # Compressing `.tar` Files
+
+When the `-c` and `-f` options are used with `tar`, it allows to archive files or directories.
+
+However, `tar` can also be used with other options to compress along with `-cf`:
+
+* `-z` - compress the resulting archive using `gzip`. The resulting file extension will be `.tar.gz`
+* `-j` - compress the resulting archive using `bzip2`. The resulting file extension will be `.tar.bz2`
+* `-J` - compress the resulting archive using `xz`. The resulting file extension will be `.tar.xz`
+
+![image](https://user-images.githubusercontent.com/107522496/200856481-a159671c-8de9-4d74-9912-ed8308ed5904.png)
+
+The above will take the video1.mp4 and video2.mkv and commpress them and archive called `zippedvideos.tar.gz`.
+
+---
+
+# Decompressing & Extracting `.tar` files
+
+In order to extract and decompress a `.tar` archive, change the `-c` to and `-x`. For example:
+
+
+![image](https://user-images.githubusercontent.com/107522496/200859761-8154f603-cfd9-457f-91c9-4346b9e50073.png)
+
+--- 
+
+# Few More Examples 
+
 
 
 
