@@ -1,22 +1,19 @@
 
 
-# Compression
+~~# Compression~~
 
-~~ Archiving Files with TAR and gzip
+~~Archiving Files with TAR and gzip~~
 
-In linux and Unix based systems, a common archive format is a TGZ file.
+~~In linux and Unix based systems, a common archive format is a TGZ file.~~
 
-This section will be looking at how to create and extract such files. 
+~~This section will be looking at how to create and extract such files.~~
 
-TGZ stands for TAR gzip. Archives are created using two different programs, TAR and gzip.
+~~TGZ stands for TAR gzip. Archives are created using two different programs, TAR and gzip.~~
 
-TAR (Tape Archive Utility) was initally designed to write files to tape - TAR would take multiple files and string them together into one file just like an archive does
-> An archive, such as a zipped file, is a group of files inside one big file. 
+~~TAR (Tape Archive Utility) was initally designed to write files to tape - TAR would take multiple files and string them together into one file just like an archive does~~
+~~> An archive, such as a zipped file, is a group of files inside one big file.~~
 
-So, TAR collects the files together and gzip takes the files and makes them smaller.
-
-~~ 
-
+~~So, TAR collects the files together and gzip takes the files and makes them smaller.~~
 
 
 
