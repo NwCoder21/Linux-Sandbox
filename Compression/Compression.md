@@ -128,6 +128,13 @@ To unzip a archived file, use the `unzip` command:
 
 Here, we compress and archive two fils, test1.txt and test2.txt. We then move the archive file to the user directory and unzip it. 
 
+---
+
+# `zip -r` - Archiving Directroies 
+
+Can also compress and archive directories using the `-r` optin with `zip`. For example:
+
+![image](https://user-images.githubusercontent.com/107522496/200821406-23c3d84f-63b8-407f-a8c9-6d2d7718cc90.png)
 
 
 
