@@ -97,13 +97,28 @@ To decompress files, the `-d` option will be used.
 
 ![image](https://user-images.githubusercontent.com/107522496/200810124-436952a7-9262-477c-accd-ac88812e2a6d.png)
 
+---
 
+# Archiving Files 
 
+Archiving files allows to combibe mutiple files or directories into a single archived file. 
 
+In linux, there are two main archive commands which have the ability to compress and archive files. They are:
 
+* `zip`
+* `tar`
 
+The advantage of using of of the two above archive commands is that, in one command the file/s size will be reduced and packaged into a single archive file.  
 
+---
 
+## Creating a zip file
+
+### Syntax 
+
+```console
+$ zip <archive_name>.zip <file1> <file2> ... 
+```
 
 
 
