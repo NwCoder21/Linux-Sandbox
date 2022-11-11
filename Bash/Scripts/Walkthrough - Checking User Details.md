@@ -76,20 +76,59 @@ When we run the below script:
 
 ![image](https://user-images.githubusercontent.com/107522496/201334257-abcf6e40-ef44-4dc6-a01a-d847dfc04ab7.png)
 
+Will output:
 
+![image](https://user-images.githubusercontent.com/107522496/201334576-4f258b38-da73-4e99-9a4e-fe3b8ed24f8e.png)
 
+---
 
+Another, older, syntax to assign USERNAME would be:
+```yaml
+USERNAME=`id -un`
+```
+However, this is not commonly used nowadays. 
 
+---
 
+# Display is user is the root user or not 
 
+![image](https://user-images.githubusercontent.com/107522496/201334722-61f0488d-1655-4472-9f93-7d8c0d33ddb3.png)
 
+`if [[ "${UID}" -eq 0 ]]`
 
+Whenever use variables inside of double brackets, `[]`, close them in quotation marks, `””`. 
 
+The syntax of:
 
+```yaml
+[[ … ]]
+```
 
+Either returns 0 for true, or 1 for false.
 
+To find out more about if statement, type in terminal enter `type -a if`
 
+![image](https://user-images.githubusercontent.com/107522496/201334878-710b0aad-4568-4ff9-a666-6d17c823c44c.png)
 
+Can see it is a shell keyword, so, for  more help, enter `help if`
+
+![image](https://user-images.githubusercontent.com/107522496/201334962-06e631d5-20e4-47d3-82a6-9efdf78e84f6.png)
+
+The `;`, semicolon, is a command separator. Another command separator is pressing enter or begin on new line.
+By pressing enter and starting a new line, it means it is easier to read, but also correct to use semicolon and keep everything on one line
+
+---
+
+> Note: older way to write a conditional expression is by placing the expression between sign square brackets, such as: 
+`[ … ]`  
+
+---
+
+When running the script as root (by using sudo or su) 
+
+![image](https://user-images.githubusercontent.com/107522496/201335151-e5ad114a-32c3-4aaa-8be7-05ffa911a692.png)
+
+We can now see that the user is now root. 
 
 
 
