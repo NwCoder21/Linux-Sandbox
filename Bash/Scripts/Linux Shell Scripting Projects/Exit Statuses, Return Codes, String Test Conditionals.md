@@ -159,14 +159,35 @@ Now let's run our script as current user and then as sudo
 
 ![image](https://user-images.githubusercontent.com/107522496/203111526-c2083f91-c684-408e-b717-207ef15391c9.png)
 
+Here, for sudo, it says your UID does not match 1000.In our scrip, we  had an exit statement and we exited it as one.  
 
+![image](https://user-images.githubusercontent.com/107522496/203114622-75786c1e-4b1b-43b0-ae3b-8dcc6eaea28c.png)
 
+So, let's check the exit status and see if it is true.:
 
+![image](https://user-images.githubusercontent.com/107522496/203114986-715d6882-d284-40a8-8b1d-e16c81d27043.png)
 
+This shows that the exit status of our script is 1.
 
+---
 
+![image](https://user-images.githubusercontent.com/107522496/203116317-1f92ef5b-7ec2-4a27-bb60-ef5433fee8db.png)
 
+Now let's check for inequaility using an If Statement with a string 
 
+`exit 0` if we get all the way to the end of the script, we can use exit and we can be very explicit about the exit status we want to use. We will use zero to say our script executed successfully
+
+Remember: if we don’t specify an exit status or exit code, the exit status of the most recent executed command will be used as the exit status of the exit command  
+
+---
+
+Lets run it one more time..
+
+![image](https://user-images.githubusercontent.com/107522496/203117780-74d98df9-d972-4566-ba82-72f0251fde9a.png)
+
+![image](https://user-images.githubusercontent.com/107522496/203117884-04ff7fc4-30c8-4aa4-b9b7-80ae4979a4b4.png)
+
+This shows us we have an exit status of0, which means convention, our script completed successfully.
 
 
 
