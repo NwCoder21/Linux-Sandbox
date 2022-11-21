@@ -104,6 +104,7 @@ Bash has some special variables that it sets, and one of these special variables
 
 ![image](https://user-images.githubusercontent.com/107522496/203103582-0ee64c24-7054-4931-b547-e36cb4c4698e.png)
 
+## `${?}` - Special Variable which holds the exit status of the most recently executed command.
 
 `${?}` is a special variable which holds the exit status of the most recently executed command. 
 
@@ -140,7 +141,15 @@ If we want to test for success, we will want to test if it does not equal zero a
 
 # Testing Against a String 
 
+![image](https://user-images.githubusercontent.com/107522496/203109989-d5577e42-9229-4812-9920-7ce62408458b.png)
 
+Instead of testing numbers, let’s do a test against a string 
+We’ll use an if statement to perform a test. If the username is the same as the username to test for, then we will print out “your username matches the user name we are testing for”
+
+Note: `=` can be used as a assignment operator or a test operator depending on the context.
+When doing a test inside of double square  brackets, then it is a test operator and is used to compare.
+
+When using `==` in a test, the string to the right of the operator is used as a pattern and pattern matching is performed. As we are not looking for a pattern, rather, we are looking for an exact match, we will use =`
 
 
 
