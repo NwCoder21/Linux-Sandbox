@@ -151,8 +151,11 @@ When doing a test inside of double square  brackets, then it is a test operator 
 
 When using `==` in a test, the string to the right of the operator is used as a pattern and pattern matching is performed. As we are not looking for a pattern, rather, we are looking for an exact match, we will use =`
 
+---
 
+Now let's run our script as current user and then as sudo
 
+![image](https://user-images.githubusercontent.com/107522496/203110984-a7dbd02d-5319-4a4e-bf26-f1750f87cefd.png) 
 
 
 
