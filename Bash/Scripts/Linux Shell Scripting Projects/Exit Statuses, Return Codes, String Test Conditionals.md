@@ -30,7 +30,7 @@ In this script, we will be referencing this variable multiple times, so, instead
 
 ---
 
-![image](https://user-images.githubusercontent.com/107522496/203089025-e52264e9-6627-4c17-a8c3-801c67e86ec2.png)
+![image](https://user-images.githubusercontent.com/107522496/203111848-9a2688b7-9f09-4b8a-800d-0e8d6d2bcdae.png)
 
 Here, if the UID is not 1000, the program will output "Your UID does not match 1000 "
 Will use the `exit` command in order to stop the execution of the script. We can also supply an exit status after the exit command. We will supply one here.
@@ -69,7 +69,7 @@ If you want to be explicit, then specify an exit status following the exit built
 
 ---
 
-![image](https://user-images.githubusercontent.com/107522496/203095807-d0bb6209-d152-4a69-bec6-adb14888e64c.png)
+![image](https://user-images.githubusercontent.com/107522496/203111995-e4eb3800-2461-4a03-82fe-3f7c01f58876.png)
 
 If we test the script so far, this is what is printed:
 
@@ -149,13 +149,15 @@ We’ll use an if statement to perform a test. If the username is the same as th
 Note: `=` can be used as a assignment operator or a test operator depending on the context.
 When doing a test inside of double square  brackets, then it is a test operator and is used to compare.
 
-When using `==` in a test, the string to the right of the operator is used as a pattern and pattern matching is performed. As we are not looking for a pattern, rather, we are looking for an exact match, we will use =`
+When using `==` in a test, the string to the right of the operator is used as a pattern and pattern matching is performed. As we are not looking for a pattern, rather, we are looking for an exact match, we will use `=`
 
 ---
 
 Now let's run our script as current user and then as sudo
 
-![image](https://user-images.githubusercontent.com/107522496/203110984-a7dbd02d-5319-4a4e-bf26-f1750f87cefd.png) 
+![image](https://user-images.githubusercontent.com/107522496/203111390-fdc48f72-d413-4fc9-9af2-27705c03b8f3.png)
+
+![image](https://user-images.githubusercontent.com/107522496/203111526-c2083f91-c684-408e-b717-207ef15391c9.png)
 
 
 
