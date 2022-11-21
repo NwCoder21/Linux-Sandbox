@@ -38,12 +38,32 @@ The reason why we have specified 1 is because the script does not successfully e
 By convention, when a script or program executes successfully, it returns an exit status of zero/0. If it does not execute successfully for whatever reason, it returns a non-zero exit status.
 Most of time, that exit status is 1, however, it can be any number such as 2, 99, 457 etc. You can use a variety of different exit statuses if you want. 
 
+---
+
+An example of this is the `useradd` command, which we will use later to add users: 
+
+![image](https://user-images.githubusercontent.com/107522496/203090894-1ca9cf2d-4bb6-46b9-bc4f-b67a5d414583.png)
+
+we can see from its man page that they are called exit values. 
+For example, the exit status 9 means the username is already in use. So, if you write a script and you run the `useradd` command and you get an exit status of9, you know it means that , that username is already being used by someone else. 
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/203091060-78b9f6cb-ddab-4aa2-9993-8f73aa31faf7.png)
+
+To see whay type of command `exit` is, we can use the `type -a` command. From this we can see that it is a shell built-in, so can use the `help` command to get more information on it.
+
+![image](https://user-images.githubusercontent.com/107522496/203095322-4ddd725a-3423-45d0-ba30-c44788cfb557.png)
 
 
 
 
+Here, we can see that we can use without any options. We know this because there is a ‘n’ in the brackets. That means it is optional.  This means if we just type `exit`, it will exit the shell. 
+If you want to supply an exit status, can enter it after the `exit` keyword, such as `exit 1`.
 
+If you omit the exit status, then the exit status is that of the last command executed. 
 
+If you want to be explicit, then specify an exit status following the exit built-in command 
 
 
 
