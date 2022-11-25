@@ -1,0 +1,86 @@
+#!/bin/bash
+
+
+
+# Script which outputs list of folders in current directory and asks user which one would they like to compress
+
+
+
+# Declaring count variable 
+
+COUNT=0
+
+COUNTER=0
+
+
+
+# Declare array to hold name of folders in current directory
+
+declare -a FOLDERSARRAY
+
+
+
+# Output only folders in current directory
+
+for folder in $(ls -d */)
+
+do
+
+        FOLDERSARRAY[$COUNT]="${folder%%/}"
+
+        ((COUNT++))
+
+done
+
+
+
+# Finding the length of the FOLDERSARRAY
+
+FOLDERSLENGTH=${#FOLDERSARRAY[@]}
+
+
+
+# Length of FOLDERSARRAYminus 1 
+
+FOLDERARRMIN1=$(( ${#FOLDERSLENGTH[@]} - 1 ))
+
+
+
+# For loop to output folders in currennt directory 
+
+for (( i=0; i<${FOLDERSLENGTH}; i++ ));
+
+do
+
+        echo "Press $COUNTER to compress ${FOLDERSARRAY[$i]}"
+
+        ((COUNTER++))
+
+done
+
+
+
+# Read user's input
+
+read choice
+
+# Folder which will be compressed
+
+TOCOMPRESS=${FOLDERSARRAY[choice]}
+
+echo "You will be compressing the ${TOCOMPRESS} folder"
+
+
+
+echo "What would you like to name the archive?"
+
+read ARCHIVENAME
+
+
+
+tar -cf ${ARCHIVENAME}.tar.gz ${TOCOMPRESS}
+
+
+
+exit
+
