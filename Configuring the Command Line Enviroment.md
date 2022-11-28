@@ -20,6 +20,9 @@ The below is an example of what it will look like:
 
 ![image](https://user-images.githubusercontent.com/107522496/204242023-f773ef48-970f-4aaa-9078-3a5efadaf31c.png)
 
+> To undo changes, delete the line you have just added and run `source` on the `.bashrc` file again.
+
+
 ---
 
 
