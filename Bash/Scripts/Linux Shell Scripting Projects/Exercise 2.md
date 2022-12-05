@@ -49,6 +49,18 @@ fi
 
 And that is our check for superuser privileges.
 
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205628455-e7031589-0447-490b-837f-c2a70e638df7.png)
+
+Now, if the user has superuser privileges or is the root user, we need to start collecting information from the user.
+
+We will do this by using `read` shel built-inn command.
+
+`-p` stands for prompt. 
+
+`USER_NAME`: we are going to assign what the user types into a variable called `USER_NAME`.
+
 
 
 
