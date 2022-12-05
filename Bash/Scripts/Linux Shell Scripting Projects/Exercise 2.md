@@ -111,7 +111,56 @@ The `useradd` command requires root privileges. This is why we did the check at 
 
 ![image](https://user-images.githubusercontent.com/107522496/205647690-d9728452-9019-44fd-8588-fe9287c090cc.png)
 
-To check that this command (`useradd -c "${COMMENT}" -m ${USER_NAME}`) is a success. To do this, we can check the exit status of the `useradd` command.
+```bash
+if [[ "${?}" -ne 0 ]]
+then
+        echo 'The account could not be created.'
+        exit 1
+fi
+
+```
+
+To check that this command (`useradd -c "${COMMENT}" -m ${USER_NAME}`) is a success, we can check the exit status of the `useradd` command.
+
+`${?}`: We learnt is the previous lesson that the exit status of the most previously executed command, is stored in `${?}`.
+
+If the exit status is 0, it means that everything went well and the command was a success.
+
+`-ne 0` - and if the exit status is not equal to 0, it means something went wrong and we will display an error message saying "The account could not be created.".
+`exit 1` - and we will exit this script with a non-zero exit status.
+
+
+If we get passed this if statement, it means that the `useradd` command was a success.
+
+---
+
+<!-- 13:46 -->
+
+# Setting the Password for the Account 
+
+![image](https://user-images.githubusercontent.com/107522496/205682302-e99ef6ed-a677-4342-a0e7-2528058ec136.png)
+
+Here, we are echoing the password and then pipe that output as as the input to the `passwd` command with the `--stdin` option. Here, we also supply the `USER_NAME` variable to the `passwd` command.
+
+`if [[ "${?}" -ne 0 ]]` - here, we an also check to see if the password command succeeded and if the password was properly set on the account. 
+
+---
+
+<!-- 14:45 -->
+
+# Forcing a Password Change on First Login.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- 12:55 -->
