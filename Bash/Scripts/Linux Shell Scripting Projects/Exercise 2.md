@@ -51,6 +51,8 @@ And that is our check for superuser privileges.
 
 ---
 
+<!-- 10:10 --> 
+
 ![image](https://user-images.githubusercontent.com/107522496/205628455-e7031589-0447-490b-837f-c2a70e638df7.png)
 
 Now, if the user has superuser privileges or is the root user, we need to start collecting information from the user.
@@ -61,9 +63,11 @@ We will do this by using `read` shel built-inn command.
 
 `USER_NAME`: we are going to assign what the user types into a variable called `USER_NAME`.
 
+---
 
+![image](https://user-images.githubusercontent.com/107522496/205629678-9c4ecadb-4e2f-4533-802f-242d478e284e.png)
 
+The next piece of information we need from the user is the account holder's real name. This is just going to be the contents for the description filled or comment filled in the password file. It does not have to be a real name, so, if someone is creating an account for an application, this might be the application name.
 
-
-
+`COMMENT`: We are going to call this `COMMENT`
 
