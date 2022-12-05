@@ -150,14 +150,99 @@ Here, we are echoing the password and then pipe that output as as the input to t
 
 # Forcing a Password Change on First Login.
 
+![image](https://user-images.githubusercontent.com/107522496/205684226-6d349a0b-f051-4028-bd08-99886fa65c36.png)
+
+Finally, we also want to force the password change on first login.
+ 
+We can do this with the `passwd` command with the `-e` option and provide it with the username we want t do this with.
+
+---
+
+Now we have set the password and forced a change on the first login.
+
+---
+# Displaying Username, Password and Host Where User was Created
+
+![image](https://user-images.githubusercontent.com/107522496/205685871-d0cddd9a-24f8-4455-bca1-b78f8aa67172.png)
+
+What we want to do now is, display this information to the person running the script, so that they can then hand it off to the user that will be using the account.
+
+To create a blank line in the output, we can use the `echo` statement on its own, without any options or arguments. The echo statement displays what is passed to it and a new line. So if you don't pass anything to `echo`, it's going to print a blank line.
 
 
+--- 
 
+# Getting the Host Name
 
+To learn how to get the hostname, go to `man bash` page.
 
+![image](https://user-images.githubusercontent.com/107522496/205686578-4d964a91-6df3-4769-bc4c-be47c62c72dc.png)
 
+Once in the bash page, type `/hostname` and press enter. We will then see..
 
+![image](https://user-images.githubusercontent.com/107522496/205686988-5655705f-9b5f-4949-9175-681f13b13c89.png)
 
+As the hostname is in all ppercase letters, we konw that something in all uppercase letters can be a variable name. So this variable says, that it's automatically set to the name of the current host.
+
+We also can check that it is a variable by scrilling up and checking what section it comes under. 
+
+![image](https://user-images.githubusercontent.com/107522496/205687526-83448964-a890-45a3-92f9-954ca4e42677.png)
+
+We can see that `HOSTNAME` is under the `Shell Variables` section.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205688010-f57cbedf-e4f9-4b78-92d8-2f0916342d81.png)
+
+To check the value of `HOSTNAME`, we can type `echo ${HOSTNAME}`.
+
+---
+
+So let's get back into our shell script and add this last bit of information.
+
+![image](https://user-images.githubusercontent.com/107522496/205688631-078588d6-04f4-4463-8e31-b5274fc15195.png)
+
+So if we get to this point, the script is really complete and it's completed successfully. So, by convention we need to exit with a zero exit status. We can do this bu using `exit 0`.
+
+---
+
+# Testing the Script
+
+To add a user with the above script, run it with `sudo`.
+
+![image](https://user-images.githubusercontent.com/107522496/205692088-eff736ee-9a93-4dca-bd2f-144424559ec7.png)
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205692570-5157ccbd-8b10-4242-84a7-cf5acc764ad4.png)
+
+Looks like the script was executed successfully. We can check the exit status with `echo "${?}"`. 0 means it was successful. 
+
+---
+
+# Checking if the user was created
+
+![image](https://user-images.githubusercontent.com/107522496/205693289-b94be94f-6cec-4662-979d-99b4605ab47b.png)
+
+Use the `cat /etc/passwd` command or the tail `/etc/passwd` command to check if the user has been created. We can also see that the comment has been included in the account line.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205694606-e72c2b05-1bdc-42df-93c5-8a4d15b83449.png)
+
+To check further that it has been created, use `su - <User_Name>`
+
+`su` this is used to switch user.
+`-` is used to get the user's login enviroment.
+`guyCheshire` is the username
+
+It then asks us for the password we initally used. And then forces it to be changed
+
+This has shown that the script works as it should.
+
+---
+
+# Running the script without the correct privileges.
 
 
 
