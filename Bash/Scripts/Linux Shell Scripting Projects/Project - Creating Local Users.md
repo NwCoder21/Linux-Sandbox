@@ -1,4 +1,4 @@
-# Exercise 2
+# Project 2 - Creating Local Users
 
 The following is the scenario and the requirements for this task:
 
