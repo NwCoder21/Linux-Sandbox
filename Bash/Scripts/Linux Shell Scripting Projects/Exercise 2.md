@@ -244,19 +244,78 @@ This has shown that the script works as it should.
 
 # Running the script without the correct privileges.
 
+Type `add-local-users.sh`
+
+Can also run `echo "${?}"` to see the exit status of the scrit. In this case, it is a non zero exit status, 
 
 
 
 
-<!-- 12:55 -->
+![image](https://user-images.githubusercontent.com/107522496/205695458-f0550abc-7ec5-4f32-b089-054cab3ec11c.png)
+
+# Code 
+
+```bash 
+#!/bin/bash
+
+# This script creates a new user on the local system.
+# You will be asked to enter the username (login), the person's name, and a password.
+# The username, password and host for the account will be displayed
+
+# Make sure the script is being executed with superuser privileges.
+if [[ "${UID}" -ne 0 ]]
+then
+        echo 'Please run as sudo or as root.'
+        exit 1
+fi
+
+# Get the username (login) 
+read -p 'Enter the username you want to create: ' USER_NAME
+
+# Get the real name (contents for the description field) 
+read -p 'Enter the name of the person or application that will be using this account: ' COMMENT
+
+# Get the password 
+read -p 'Enter the password to use for the account: ' PASSWORD
+
+# Create the account 
+useradd -c "${COMMENT}" -m ${USER_NAME}
+
+# Check to see if the useradd command succeeded or not.
+# We don't want to tell the user that an account was created when it was not.
+if [[ "${?}" -ne 0 ]]
+then
+        echo 'The account could not be created.'
+        exit 1
+fi
+
+# Set the password.
+echo ${PASSWORD} | passwd --stdin ${USER_NAME}
+
+# Check if the password command succeeded
+if [[ "${?}" -ne 0 ]]
+then
+        echo 'The password for the account could not be set.'
+        exit 1
+fi
+
+# Force password change on the first login.
+passwd -e ${USER_NAME}
+
+# Display the username, password, and the host where the user was created.
+echo
+echo 'Username:'
+echo "${USER_NAME}"
+echo
+echo 'Password:'
+echo "${PASSWORD}"
+echo
+echo 'Host name:'
+echo "${HOSTNAME}"
+exit 0
 
 
-
-
-
-
-
-
+```
 
 
 
