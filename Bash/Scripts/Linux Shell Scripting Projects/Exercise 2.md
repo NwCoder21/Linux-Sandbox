@@ -99,9 +99,23 @@ useradd -c "${COMMENT}" -m ${USER_NAME}
 
 The `useradd` command requires root privileges. This is why we did the check at the start of this scriptto ensure user has these rights.
 
-`-c`: here, we are using the `-c` option. We are supplying the name of the user or application that was given to us which was stored in the `COMMENT` variable. 
+`-c`: here, we are using the `-c` option. We are supplying the name of the user or application that was given to us which was stored in the `COMMENT` variable. And we enclose that in quotes so that even if there will be spaces in this comment, it's all treated as the comment. So, for example, `James Smith` will be treated as one thinf, and won'tbe treated as two seperate things.
 
-And we enclose that in quotes so that even if there will be spaces in this comment, it's all treated as the comment.
+`-m`: we want to ensure that the Home Directory is also created.
+
+`USER_NAME`: we also want to add the username to the `useradd` command, this is where we do that.
+
+---
+
+# Checking success of the above command.
+
+![image](https://user-images.githubusercontent.com/107522496/205647690-d9728452-9019-44fd-8588-fe9287c090cc.png)
+
+To check that this command (`useradd -c "${COMMENT}" -m ${USER_NAME}`) is a success. To do this, we can check the exit status of the `useradd` command.
+
+
+<!-- 12:55 -->
+
 
 
 
