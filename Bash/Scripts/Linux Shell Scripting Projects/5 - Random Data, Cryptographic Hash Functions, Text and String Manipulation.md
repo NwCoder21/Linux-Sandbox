@@ -269,9 +269,36 @@ in the terminal.
 
 ---
 
+![image](https://user-images.githubusercontent.com/107522496/207311122-9e2160fd-aef2-4166-a81c-0cdb3ad4394f.png)
 
+`head` outputs the first part of files or the "head" portion of a file. Without any option specified with `head`, itwill print out the first 10 lines of a file.
 
+Just like the `sha256sum` command, under `head`it also says "With  no  FILE, or  when FILE is -, read standard input.". So, we know we can use this `head` command in conjunction with the pipe.
 
+`-c` option is used to print  the first K bytes of each file.
+`-n` option print the first K lines instead of the first 10.
+
+Let's try out these options in the terminal.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/207312698-2248608a-09ac-44ba-8a76-1519385f0417.png)
+
+Here, by using the `-n1` option, it will print out the first line of the `/etc/passwd` file.
+
+Can use both styles, `head -n1` or `head -n 1`.
+
+`head -1` is the older way of doing the above.
+
+---
+
+Another example is:
+
+![image](https://user-images.githubusercontent.com/107522496/207312969-730e80a6-1cff-496d-afbb-c56098aea7be.png)
+
+Here, we are printing out the first two lines from the `/etc/passwd` file.
+
+Continue from `19:40`
 
 
 
