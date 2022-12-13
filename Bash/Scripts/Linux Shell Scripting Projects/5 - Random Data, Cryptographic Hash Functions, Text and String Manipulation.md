@@ -235,8 +235,7 @@ From the Synopsis, we can see that `sha256sum` can be used with optional options
 
 **"With no FILE, or when FILE is a -, read standard input." - this means a pipe turns the output of the previous command as standard input in the command that follows the pipe.**
 
-**And by the way, most commands work like this. If they take a file as an argument, you can also not use the file and instead use standard input via a pipe and it will operate on that input.
-**
+**Most commands work like this. If they take a file as an argument, you can also not use the file and instead use standard input via a pipe and it will operate on that input.**
 
 ---
 
