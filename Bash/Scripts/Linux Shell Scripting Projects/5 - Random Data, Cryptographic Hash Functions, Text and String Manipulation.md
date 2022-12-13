@@ -98,6 +98,8 @@ The first password is one random number and the second password is three random 
 
 ---
 
+# `date`
+
 We can also improve this script. Something that is always changing is time. It's never the same time ever again. This is some data which is always changing.
 
 So let's use the current date and time as the basis for a password to generate. So, let's take a look at the `DATE` command and some of its options using:
@@ -164,6 +166,118 @@ man date
 ---
 
 ![image](https://user-images.githubusercontent.com/107522496/207300817-082b1f8f-248c-4e92-95a2-265824345e42.png)
+
+Here we have the nanoseconds format. When you use this format, it prints the nanosecond that the date command was executed. So there's about nine digits here so that leaves us a lot more data to guess.It would be really hard to guess these nanosecond.
+
+So if we actually combine that with the UNIX time we saw in the last section, then we can generate a long number.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/207302983-58d75e7c-f62c-468c-9113-4090c94688fa.png)
+
+
+Now, when we combine the UNIX time and nanoseconds, the first part (%s, UNIX time) changes slightly, however, the second part (%N, nanoseconds), chnages a lot.
+
+
+Now let's use this pattern as a password in our script.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/207303687-4c965678-902e-45e6-b040-f6b66282f97b.png)
+
+This is what it look like now. 
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/207303919-14854d3a-d94a-4a33-8661-4c12159150e4.png)
+
+---
+
+# checksum
+
+Let's take this one step further by using checksums or cryptographic hash functions. 
+
+A checksum is a numeric value computed for a block of data that is relatively unique. Check sums were and are used to verify the integrity of data such as files. For example, if you download a file and you want to make sure that it's not corrupt in some way, you find the published checksum for the file and compare it to the file you downloaded.
+
+<!-- 11:18 till 15:12: example of CENTOS --> 
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/207305027-29a3e117-3e08-4b46-953b-fdcd15362f66.png)
+
+All these programs do pretty much the same thing. They take a big chunk of data and reduce it down to a single number or a string that represents that chunk of data to verify if it's the same or not.
+
+---
+
+# `sha256sum`
+
+Let's get back to password generation. checksums are actually hexadecimal numbers with 0-9 representing 0 to 9, and A through to F representing the values from 10 to 16.
+
+For example, if we were to use a sha256 sum as a password, that password would consist of 16 different characters, from 0 to 9, and A through to F and it would be be 64 characters in length.
+
+Let's turn the current date and time into a sha256 sum by piping the output of the date command as the input into the sha256 sum command.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/207308455-ec6e1957-e273-4b67-ad8f-bd487f5428aa.png)
+
+This is the sha256sum of the output of the date command at the time this was executed.
+
+> Pipe symbol takes the output of the preceding command and sends it as a standard input to the following command.
+
+---
+
+So, how does this work? Let's look at the man page for `sha256sum`:
+
+![image](https://user-images.githubusercontent.com/107522496/207308847-1144430c-2c30-49e3-9171-b4e064537c76.png)
+
+From the Synopsis, we can see that `sha256sum` can be used with optional options as well as optional files.
+
+**"With no FILE, or when FILE is a -, read standard input." - this means a pipe turns the output of the previous command as standard input in the command that follows the pipe.**
+
+**And by the way, most commands work like this. If they take a file as an argument, you can also not use the file and instead use standard input via a pipe and it will operate on that input.
+**
+
+---
+
+Becuase our objective is to generate a seemingly random set of characters as a password, we really don't care if the `sha256sum` remains intact or not. We're not going to be using that checksum to check it against another piece of data. We just want the output from the `sha256sum`.
+
+---
+
+<!-- 17:24 --> 
+
+# The `head` command
+
+So, if we want to control the size of this generated password, we will need to control the number of characters returned or displayed.
+
+One way to do this is by ussing the `head` command. 
+
+Question: how can you tell if `head` is a program on the system or if it's a shell built in?
+
+Answer: use:
+
+```yaml
+type -a head
+```
+in the terminal.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/207310760-53ffbf93-4876-426c-895a-ac1ee92703a5.png)
+
+`/usr/bin/head` means `head` is a program. This means we can't use `help` with it, instead, we use `man head`.
+
+---
+
+
+
+
+
+
+
+
+
+
 
 
 
