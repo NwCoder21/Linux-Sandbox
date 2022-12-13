@@ -322,7 +322,32 @@ Continue from `19:40`
 ---
 
 
+# Code
 
+```bash
+
+#!/bin/bash
+
+# The aim of this script is to generate a list of random passwords
+
+# A random number being set as the password 
+PASSWORD="${RANDOM}"
+echo "${PASSWORD}"
+
+# Three random numbers together 
+PASSWORD="${RANDOM}${RANDOM}${RANDOM}"
+echo "${PASSWORD}"
+
+# Use the current date/timeas the basis for the password.
+PASSWORD=$(date +%s)
+echo "${PASSWORD}"
+
+
+# Use nanoseconds to act as randomization.
+PASSWORD=$(date +%s%N)
+echo "${PASSWORD}"
+
+```
 
 
 
