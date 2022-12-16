@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 #the below link is the site we will be using to take the weather information
 #curl "wttr.in/$1"
