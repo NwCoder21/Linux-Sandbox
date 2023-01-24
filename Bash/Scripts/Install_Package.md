@@ -1,7 +1,5 @@
 # Installing Packages Script 
 
-![image](https://user-images.githubusercontent.com/107522496/214344409-db9b573a-4878-4ff5-90ac-2eafd1ae9317.png)
-
 ```bash
 #!/bin/bash
 
@@ -26,6 +24,12 @@ else
 fi
 ```
 
+![image](https://user-images.githubusercontent.com/107522496/214433819-0b529110-af3f-44cb-92ee-7097dd8c5220.png)
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/214344409-db9b573a-4878-4ff5-90ac-2eafd1ae9317.png)
+
 When we run this script, we should see less output. If the script is successful, the output will be sent to the `package_install_output.log` file. If the script does not run successfuly, the output will be sent to `package_install_failure.log`.
 
 ---
@@ -40,6 +44,11 @@ We then are checking the data entered  into both files.
 
 ---
 
+![image](https://user-images.githubusercontent.com/107522496/214433634-c2d4614d-f597-409b-b90c-5f2cffe75f21.png)
+
+Here, we are running a valid command and then checking the output in the `package_install_output.log`.
+
+---
 
 ![image](https://user-images.githubusercontent.com/107522496/214433207-0d102036-5ead-484f-b2d4-f9e78332045f.png)
 
