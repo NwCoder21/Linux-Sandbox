@@ -41,8 +41,9 @@ We then are checking the data entered  into both files.
 ---
 
 
+![image](https://user-images.githubusercontent.com/107522496/214433207-0d102036-5ead-484f-b2d4-f9e78332045f.png)
 
-
+When you use an exit code, the script comes to an end and does not ready anything after that.  
 
 
 
