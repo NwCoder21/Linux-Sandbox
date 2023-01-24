@@ -12,10 +12,9 @@ The below line of code takes argument passed in by user and tries to install it.
 : '
 
 sudo apt install $package >> package_install_output.log
-echo "The exit code for this script is ${?}"
 
 # If statement to print statements if exit code is 0 - i.e., successful 
-if [[ $? -eq 0 ]]
+if [ $? -eq 0 ]
 then
         echo "The installation of $package was successful"
         echo "The new command is available here:"
@@ -25,11 +24,21 @@ then
 else
         echo "$package failed to install." >> package_install_failure.log
 fi
-
-
 ```
 
 When we run this script, we should see less output. If the script is successful, the output will be sent to the `package_install_output.log` file. If the script does not run successfuly, the output will be sent to `package_install_failure.log`.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/214431206-9dd198ab-1675-4960-a674-891cbae5d5d4.png)
+
+Here, we are trying to install a package called `treee`. This package does not exist. So, it should not be successful ...
+
+![image](https://user-images.githubusercontent.com/107522496/214431511-9677d00a-7246-4244-94c6-0725a1c8c83f.png)
+
+We then are checking the data entered  into both files. 
+
+---
 
 
 
