@@ -13,5 +13,4 @@ Some of the reources and tools I have used are as follows:
 
 # Resources
 
-[Users, Groups and Permissions in Linux
-](https://www.youtube.com/watch?v=zRw0SKaXSfI)
+Video: [Users, Groups and Permissions in Linux](https://www.youtube.com/watch?v=zRw0SKaXSfI)
